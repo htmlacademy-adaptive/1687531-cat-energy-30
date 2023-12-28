@@ -1,11 +1,11 @@
 {
-  "name": "cat-energy-30",
+  "name": "cat-energy-3",
   "private": true,
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "@htmlacademy/editorconfig-cli": "1..",
     "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "^0.1.11"
+    "stylelint-config-htmlacademy": "^.1.11"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
