@@ -4,15 +4,23 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png"> <!--180x180-->
+  <link rel="icon" href="./images/favicons/32.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body class="page__body">
   <header class="header">
     <div class="header__wrapper">
       <div class="header_wrapper-pic">
-        <img class="header__logo" src="./img/header/logo-header.svg" alt="Логотип Cat-Energy" />
-        <img class="header__cat-energy" src="./img/header/cat-energy.svg" width="150" height="150"
-          alt="Логотип Cat-Energy" />
+        <picture>
+          <source  media="(min-width: 1440px)" type="image/svg+xml" width="70" height="59"  srcset="./images/header/logo-desktop.svg"> 
+           <source   media="(min-width: 768px)" type="image/svg+xml" width="60" height="50" srcset="./images/header/logo-table.svg"> 
+          <img class="header__logo" src="./images/header/logo-mobile.svg" width="33" height="38" alt="Логотип Cat-Energy" >
+      </picture>
+        <img class="header__cat-energy" src="./images/header/cat-energy.svg" width="101" height="18" alt="Cat-Energy" >
       </div>
       <nav class="nav">
         <button class="nav__toggle" type="button">
@@ -153,7 +161,7 @@
     <div class="footer__wrapper">
       <div class="footer__map"></div>
       <div class="footer__social social">
-        <img class="social__img" src="./img/header/cat-energy.svg" alt="Логотип Cat-Energy" />
+        <img class="social__img" src="./images/header/cat-energy.svg" alt="Логотип Cat-Energy" />
         <ul class="social__list">
           <li class="social__items">
             <a class="social__link" href="#"><span class="visually-hidden">Вконтакте</span></a>
@@ -168,7 +176,7 @@
       </div>
       <a class="footer__copyright copyright" href="https://htmlacademy.ru/">
         <p class="copyright__link">HTML Academy</p>
-        <img class="copyright__htmlacademy-logo" src="img/social/html-academy.png" width="27" height="34"
+        <img class="copyright__htmlacademy-logo" src="./images/header/logo-html-academy.png" width="27" height="34"
           alt="Логотип HTML Academy." />
       </a>
     </div>
