@@ -1,1 +1,17 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+html{
+        background-color: $basic-white;
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      body{
+        margin: 0;
+        padding: 0;
+      }
