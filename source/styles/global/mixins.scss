@@ -1,9 +1,27 @@
-@mixin font-face($font-family,$font-weight,$font-scr,$font-style) { 
-    @font-face{
-    font-family: $font-family;
-    font-style: $font-style;
-    font-weight: $font-weight;
-    src: $font-scr;
-    font-display: swap;
+@mixin font-face($font-family, $font-weight, $font-scr, $font-style) {
+    @font-face {
+        font-family: $font-family;
+        font-style: $font-style;
+        font-weight: $font-weight;
+        src: $font-scr;
+        font-display: swap;
+    }
 }
+
+@mixin phone {
+    @media only screen and (max-width: $mobile-width-only) {
+        @content;
+    }
+}
+
+@mixin table {
+    @media only screen and (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (max-width: $desktop-width) {
+        @content;
+    }
 }
