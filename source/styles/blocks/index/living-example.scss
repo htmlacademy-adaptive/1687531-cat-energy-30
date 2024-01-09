@@ -1,0 +1,42 @@
+.living-example {
+    width: 320px;
+    position: relative;
+    background-color: $special-grey;
+    margin: 0 auto;
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background-color: $grey;
+    }
+}
+
+.living-example__container {
+    padding:25px 20px;
+
+}
+
+.living-example__wrapper {
+    width: 280px;
+}
+
+.living-example__title {
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 28px;
+    line-height: 40px;
+
+}
+
+.living-example__description {
+    font-family: $secondary-font;
+    margin: 0;
+    margin-bottom: 20px;
+    color: $special-dark;
+
+}

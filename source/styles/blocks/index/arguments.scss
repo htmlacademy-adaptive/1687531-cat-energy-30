@@ -1,0 +1,64 @@
+.arguments {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .arguments__wrapper {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 34px;
+  
+  }
+  
+  .arguments__list {
+    margin: 0;
+    width: 280px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+  
+  }
+  
+  .arguments__item {
+    padding: 13px 0 17px;
+    position: relative;
+    border: 1px solid $grey;
+    border-radius: 3px;
+    box-sizing: border-box;
+  
+
+  }
+  
+  .arguments__value {
+    font-size: 24px;
+    line-height: 24px;
+  
+  }
+  
+  .arguments__description {
+    margin: 0;
+    padding: 0 14px;
+    font-family: $secondary-font;
+    color:$special-dark;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: lowercase;
+    width: 87px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $special-grey;
+  
+  }
+  
+  .arguments__resume {
+    margin: 0;
+    display: flex;
+    line-height: 20px;
+  
+  }
+  

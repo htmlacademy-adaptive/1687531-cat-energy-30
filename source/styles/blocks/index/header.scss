@@ -1,0 +1,25 @@
+
+    .header {
+        width: 320px;
+        background-color: $basic-white;
+        padding: 13px 20px;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    .header__wrapper {
+        width: 280px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_wrapper-pic{
+        display: flex;
+        align-items: center;
+    }
+
+    .header__logo{
+        margin-right: 56px;
+    }
+    

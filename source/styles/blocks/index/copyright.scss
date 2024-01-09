@@ -1,0 +1,14 @@
+.copyright{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright__link{
+    text-decoration: none;
+    color: $special-dark;
+    font-size: 16px;
+}
+
+.copyright__description{
+    padding-top: 6px;
+}
