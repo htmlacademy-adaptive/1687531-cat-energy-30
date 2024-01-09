@@ -1,0 +1,107 @@
+.add-product {
+    width: 320px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+}
+
+.add-product__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+
+.add-product__title {
+    font-size: 19px;
+    line-height: 24px;
+    color: $basic-dark;
+    margin-bottom: 36px;
+}
+
+
+
+.add-product__item {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid $grey;
+    padding: 13px 0;
+
+    &:last-child {
+        border-bottom: 1px solid $grey;
+        margin-bottom: 35px;
+    }
+}
+
+.add-product__heading {
+    font-size: 13px;
+    line-height: 16px;
+    color: $special-dark-two;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.add-product__wrapper-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.add-product__descriptions{
+    font-family: $secondary-font;
+    font-size: 14px;
+}
+
+.add-product__button {
+    color: $basic-white;
+    background-color: $basic-green;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.add-product__stock {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    box-sizing: border-box;
+    padding-bottom: 219px;
+
+    &::before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 290px;
+        left:0;
+        background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../images/add-product-stock/cat-bag.png" 1x, "../images/add-product-stock/cat-bag@2x.png" 2x);
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 78px;
+        height: 80px;
+        top: 61px;
+        left: 36%;
+        background-image: url("../../images/add-product-stock/gift.svg");
+        background-repeat: no-repeat;
+    }
+}
+
+.add-product__stock-descriptions{
+    font-family: $secondary-font;
+    font-size: 16px;
+    line-height: 20px;
+    color:$basic-white;
+    display: block;
+    position: relative;
+    top: 188px;
+    left: 53px;
+    width: 162px;
+}
