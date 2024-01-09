@@ -25,3 +25,15 @@ h1,h2,h3,h4,p{
   margin: 0;
   padding: 0;
 }
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+dl,dt,dd{
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+}

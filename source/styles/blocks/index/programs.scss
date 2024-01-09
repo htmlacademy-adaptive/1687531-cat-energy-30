@@ -1,4 +1,4 @@
-@include phone {
+
     .programs {
         width: 100%;
     }
@@ -48,7 +48,7 @@
     }
 
     .programs__title {
-        font-size: 24px;
+        font-size: 18px;
         line-height: 37px;
         color: $basic-dark;
         text-transform: uppercase;
@@ -93,4 +93,3 @@
         }
     }
 
-}
