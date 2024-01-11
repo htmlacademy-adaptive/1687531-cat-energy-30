@@ -8,6 +8,17 @@
     }
 }
 
+@mixin container-styles {
+    width: 280px;
+    margin: 0 auto;
+}
+
+@mixin container-styles-tablet {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+
 @mixin phone {
     @media only screen and (max-width: $mobile-width-only) {
         @content;
@@ -15,13 +26,13 @@
 }
 
 @mixin table {
-    @media only screen and (max-width: $tablet-width) {
+    @media only screen and (min-width: $tablet-width) {
         @content;
     }
 }
 
 @mixin desktop {
-    @media only screen and (max-width: $desktop-width) {
+    @media only screen and (min-width: $desktop-width) {
         @content;
     }
 }

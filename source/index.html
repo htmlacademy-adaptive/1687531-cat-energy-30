@@ -55,9 +55,9 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="nav__list">
-            <li class="nav__item"><a href="#">Главная</a></li>
-            <li class="nav__item"><a href="catalog.html">Каталог продукции</a></li>
-            <li class="nav__item"><a href="form.html">Подбор программы</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
+            <li class="nav__item"><a class="nav__link" href="catalog.html">Каталог продукции</a></li>
+            <li class="nav__item"><a class="nav__link" href="form.html">Подбор программы</a></li>
           </ul>
         </nav>
       </div>
@@ -83,7 +83,7 @@
                 srcset="./images/promo/index-can-mobile1@2x.png 2x" width="280" height="270"
                 alt="Один из кормов для кошек">
             </picture>
-            <button class="promo__button" type="button">подбор программы</button>
+            <button class="promo__button" type="button">подобрать программу</button>
           </div>
         </section>
         <section class="programs">
@@ -91,6 +91,7 @@
             <h2 class="visually-hidden">Наши программы</h2>
             <ul class="programs__list">
               <li class="programs__item programs__item--position programs__item--cat">
+                <div class="programs__item-wrapper">
                 <h3 class="programs__title programs__title--pic programs__title--background programs__title--base">
                   похудение
                 </h3>
@@ -102,8 +103,10 @@
                 <div class="programs__link-place">
                   <a class="programs__link-catalog" href="#">каталог slim</a>
                 </div>
+                </div>
               </li>
               <li class="programs__item programs__item--panters">
+                <div class="programs__item-wrapper">
                 <h3 class="programs__title programs__title--img programs__title--picture programs__title--backdrop">
                   Набор массы
                 </h3>
@@ -114,7 +117,9 @@
                 <div class="programs__link-place">
                   <a class="programs__link-catalog" href="#">каталог pro</a>
                 </div>
+              </div>
               </li>
+            </div>
             </ul>
           </div>
         </section>

@@ -1,4 +1,4 @@
-
+@include phone{
     .promo{
     text-align: center;
     position: relative;
@@ -22,8 +22,7 @@
     }
 
     .promo__wrapper{
-        width: 280px;
-        margin: 0 auto;
+        @include container-styles;
     }
 
     .promo__title{
@@ -53,3 +52,48 @@
         font-size: 16px;
         line-height: 20px;
     }
+}
+
+/* Table */
+
+@include table {
+    .promo__wrapper{
+        @include container-styles-tablet;
+    }
+
+    .promo__title{
+        width: 414px;
+        margin-left: 90px;
+        font-size: 43px;
+        line-height: 58px;
+        margin-bottom: 40px;
+        margin-top: 60px;
+    }
+
+    .promo__description{
+        width: 400px;
+        margin-left: 90px;
+        margin-bottom: 21px;
+        font-size: 14px;
+        line-height: 20px;
+        color:$basic-dark;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .promo__button{
+        width: 244px;
+        height: 54px;
+        position: absolute;
+        background-color: #68b738;
+        color: #fff;
+        border: 0;
+        font-size: 16px;
+        top: 136%;
+        left: 17%;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+}

@@ -1,0 +1,24 @@
+.questionnaire{
+    margin-bottom: 32px;
+}
+
+.questionnaire__send{
+    @include container-styles;
+    text-align: center;
+}
+
+.questionnaire__send-form{
+    width: 100%;
+    margin-bottom: 21px;
+    padding: 10px 56px;
+    background-color: $basic-green;
+    border: none;
+    color:$basic-white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.questionnaire__required-form{
+    font-family: $secondary-font;
+    font-size:13px ;
+}

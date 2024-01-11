@@ -1,0 +1,28 @@
+@include table{
+.nav__toggle{
+    display: none;
+}
+
+.nav__list{
+    width: 477px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav__item{
+    &:not(:last-child){
+        margin-right: 33px;
+    }
+}
+
+.nav__link{
+    text-decoration: none;
+    color:$basic-dark;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+}

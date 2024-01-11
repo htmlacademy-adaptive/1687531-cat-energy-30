@@ -1,0 +1,32 @@
+.comment{
+    margin-bottom: 23px;
+}
+
+.comment__wrapper{
+    @include container-styles;
+    margin-bottom: 38px;
+}
+
+.comment__title{
+    font-size: 24px;
+    letter-spacing: 0;
+    display: inline-block;
+    padding-right: 20px
+}
+
+.comment__skill-wrapper{
+    @include container-styles;
+}
+
+.comment__skill-cat-form{
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $special-dark;
+    border: 1px solid $input-border;
+    box-sizing: border-box;
+    padding: 10px 12px 0;
+    width: 100%;
+    height: 151px;
+    resize: none;
+}

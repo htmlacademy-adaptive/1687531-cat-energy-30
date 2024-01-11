@@ -1,4 +1,4 @@
-
+@include phone {
     .header {
         width: 320px;
         background-color: $basic-white;
@@ -14,12 +14,41 @@
         align-items: center;
     }
 
-    .header_wrapper-pic{
+    .header_wrapper-pic {
         display: flex;
         align-items: center;
     }
 
-    .header__logo{
+    .header__logo {
         margin-right: 56px;
     }
-    
+
+}
+
+/* Table */
+
+@include table {
+
+    .header {
+        background-color: $basic-white;
+        box-sizing: border-box;
+        padding-top: 25px;
+    }
+
+    .header__wrapper {
+        @include container-styles-tablet;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_wrapper-pic {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__logo {
+        margin-right: 13px;
+    }
+
+}

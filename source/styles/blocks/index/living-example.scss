@@ -1,5 +1,4 @@
 .living-example {
-    width: 320px;
     position: relative;
     background-color: $special-grey;
     margin: 0 auto;
@@ -16,12 +15,12 @@
 }
 
 .living-example__container {
-    padding:25px 20px;
+    padding:25px 0;
 
 }
 
 .living-example__wrapper {
-    width: 280px;
+    @include container-styles;
 }
 
 .living-example__title {

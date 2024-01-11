@@ -1,7 +1,5 @@
 
     .contacts{
-        width: 320px;
-        margin: 0 auto;
         background-color: $white-grey;
 
         &--index{
@@ -10,7 +8,7 @@
     }
 
     .contacts__wrapper{
-        width: 280px;
+        @include container-styles;
         display: flex;
         flex-direction: row;
         align-items: center;

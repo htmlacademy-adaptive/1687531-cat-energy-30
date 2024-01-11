@@ -1,0 +1,61 @@
+.contact{
+    margin-bottom:24px ;
+}
+
+.contact__wrapper {
+    @include container-styles;
+    padding-top: 25px;
+    margin-bottom: 35px;
+}
+
+.contact__title {
+    font-size: 24px;
+    line-height: 26px;
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.contact__list-wrapper {
+    @include container-styles;
+}
+
+.contact__item {
+    &:not(:last-child) {
+        margin-bottom: 14px;
+    }
+}
+
+.contact__label {
+    font-size: 16px;
+    line-height: 18px;
+    color: $special-dark;
+    margin-right: 13px;
+}
+
+.contact__input {
+    padding: 14px 0 13px 9px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #444;
+    text-transform: uppercase;
+    position: relative;
+    border: 1px solid $grey;
+
+    &--email {
+        width: 194px;
+        background-size: 17px 13px;
+        background-repeat: no-repeat;
+        background-position: right 14px center;
+        background-image: url("../../images/contact/mail.svg");
+    }
+
+
+    &--phone {
+        width: 173px;
+        background-image: url("../../images/contact/phone.svg");
+        background-repeat: no-repeat;
+        background-position: right 14px center;
+    }
+
+    
+}

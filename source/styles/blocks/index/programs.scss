@@ -1,11 +1,10 @@
-
+@include phone {
     .programs {
         width: 100%;
     }
 
     .programs__wrapper {
-        width: 280px;
-        margin: 0 auto;
+        @include container-styles;
     }
 
     .programs__list {
@@ -21,29 +20,29 @@
         position: relative;
     }
 
-    .programs__item--cat{
-        &::before{
+    .programs__item--cat {
+        &::before {
             content: "";
             position: absolute;
             width: 50px;
             height: 53px;
             display: inline-block;
             background-repeat: no-repeat;
-            background-image: url("/images/programs/cat.svg");
+            background-image: url("../../images/programs/cat.svg");
             top: 20px;
         }
     }
 
-    .programs__item--panters{
-        &::before{
-        content: "";
-        position: absolute;
-        width: 67px;
-        height: 50px;
-        display:block;
-        background-repeat: no-repeat;
-        background-image: url("/images/programs/panter.svg");
-        top: 20px;
+    .programs__item--panters {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 67px;
+            height: 50px;
+            display: block;
+            background-repeat: no-repeat;
+            background-image: url("../../images/programs/panter-mobile.svg");
+            top: 20px;
         }
     }
 
@@ -87,9 +86,102 @@
             height: 12px;
             display: inline-block;
             background-repeat: no-repeat;
-            background-image: url("/images/programs/arrow.svg");
-            top:3px;
+            background-image: url("../../images/programs/arrow.svg");
+            top: 3px;
             margin-left: 15px;
         }
     }
+}
 
+/* Table */
+
+@include table {
+    .programs__wrapper {
+        @include container-styles-tablet;
+    }
+
+    .programs__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .programs__item {
+        background-color: #F2F2F2;
+        margin-bottom: 45px;
+        position: relative;
+    }
+
+    .programs__item-wrapper {
+        width: 340px;
+        padding: 86px 316px 62px 52px;
+    }
+
+    .programs__item--cat {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 200px;
+            height: 211px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-image: url("../../images/programs/cat.svg");
+            background-size: contain;
+            top: 24%;
+            left: 65%;
+        }
+    }
+
+    .programs__item--panters {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 268px;
+            height: 200px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-image: url("../../images/programs/panter.svg");
+            background-size: contain;
+            top: 28%;
+            left: 59%;
+        }
+    }
+
+    .programs__title {
+        line-height: 37px;
+        color: $basic-dark;
+        text-transform: uppercase;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+
+    .programs__description {
+        font-family: $secondary-font;
+        font-size: 16px;
+        line-height: 24px;
+        position: relative;
+        color: $special-dark;
+        margin-bottom: 48px;
+    }
+
+    .programs__link-catalog {
+        font-size: 20px;
+        color: $basic-dark;
+        text-transform: uppercase;
+        text-decoration: none;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 12px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-image: url("../../images/programs/arrow.svg");
+            top: 3px;
+            margin-left: 25px;
+        }
+    }
+}

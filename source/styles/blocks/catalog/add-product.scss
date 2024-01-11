@@ -5,9 +5,22 @@
 }
 
 .add-product__wrapper {
-    width: 280px;
-    margin: 0 auto;
+    @include container-styles;
     padding: 35px 0;
+    z-index: 2;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 500%;
+        height: 2px;
+        left: 95%;
+        top: 5%;
+        background-color: #68b738;
+        z-index: 1;
+}
+
 }
 
 .add-product__title {

@@ -8,6 +8,7 @@
 @import "./global/global.scss";
 /* BLOCKS */
 @import "./blocks/index/header.scss";
+@import "./blocks/index/nav.scss";
 @import "./blocks/index/nav-list.scss";
 @import "./blocks/index/promo.scss";
 @import "./blocks/index/programs.scss";
@@ -35,3 +36,10 @@
 
 @import "./blocks/form/main-container-form.scss";
 @import "./blocks/form/program-selection.scss";
+@import "./blocks/form/questionnaire.scss";
+@import "./blocks/form/cat-data.scss";
+@import "./blocks/form/purpose-program.scss";
+@import "./blocks/form/contact.scss";
+@import "./blocks/form/comment.scss";
+@import "./blocks/form/additionally.scss";
+@import "./blocks/form/line.scss";
