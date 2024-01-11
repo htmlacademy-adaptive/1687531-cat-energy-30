@@ -1,11 +1,40 @@
-.footer{
-    box-sizing: border-box;
-    background-color: $white-grey;
-    margin: 0 auto;
+@include phone {
+    .footer {
+        box-sizing: border-box;
+        background-color: $white-grey;
+        margin: 0 auto;
+    }
+
+    .footer__wrapper {
+        @include container-styles;
+        padding: 40px 0 20px 0;
+    }
 }
 
-.footer__wrapper{
-    @include container-styles;
-    padding: 40px 0 20px 0;
+/* Table */
+
+@include table {
+    .footer {
+        box-sizing: border-box;
+        background-color: $white-grey;
+    }
+
+    .footer__wrapper {
+        @include container-styles-tablet;
+        padding: 55px 0;
+    }
 }
 
+/* Desktop */
+
+@include desktop{
+    .footer {
+        box-sizing: border-box;
+        background-color: $white-grey;
+    }
+
+    .footer__wrapper {
+        @include container-styles-desktop;
+        padding: 55px 0;
+    }
+}

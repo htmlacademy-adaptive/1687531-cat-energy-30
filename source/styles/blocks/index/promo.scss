@@ -1,53 +1,53 @@
-@include phone{
-    .promo{
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-
-    &::before{
-        content: "";
-        display: inline-block;
-        position: absolute;
-        width: 100%;
-        height: 302px;
-        left:0;
-        background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../images/promo/index-background-desktop.png" 1x, "../images/promo/index-background-desktop@2x.png" 2x);
-        background-position: center;
-        background-repeat: no-repeat;
+@include phone {
+    .promo {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
         margin-bottom: 20px;
-        z-index: -1;
-    }
+
+        &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            height: 302px;
+            left: 0;
+            background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../images/promo/index-background-desktop.png" 1x, "../images/promo/index-background-desktop@2x.png" 2x);
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 20px;
+            z-index: -1;
+        }
     }
 
-    .promo__wrapper{
+    .promo__wrapper {
         @include container-styles;
     }
 
-    .promo__title{
-        padding-top:27px;
+    .promo__title {
+        padding-top: 27px;
         margin-bottom: 25px;
         font-size: 32px;
         line-height: 36px;
         font-weight: 400;
-        color:$basic-white;
+        color: $basic-white;
     }
 
-    .promo__description{
+    .promo__description {
         margin-bottom: 29px;
         font-size: 14px;
         line-height: 14px;
-        color:$basic-white;
+        color: $basic-white;
         text-transform: uppercase;
     }
 
-    .promo__button{
+    .promo__button {
         width: 100%;
         height: 40px;
         text-transform: uppercase;
-        background-color:$basic-green;
-        color:$basic-white;
+        background-color: $basic-green;
+        color: $basic-white;
         border: none;
         font-size: 16px;
         line-height: 20px;
@@ -57,32 +57,34 @@
 /* Table */
 
 @include table {
-    .promo__wrapper{
+    .promo__wrapper {
         @include container-styles-tablet;
+        position: relative;
     }
 
-    .promo__title{
+    .promo__title {
         width: 414px;
         margin-left: 90px;
         font-size: 43px;
         line-height: 58px;
         margin-bottom: 40px;
         margin-top: 60px;
+
     }
 
-    .promo__description{
+    .promo__description {
         width: 400px;
         margin-left: 90px;
         margin-bottom: 21px;
         font-size: 14px;
         line-height: 20px;
-        color:$basic-dark;
+        color: $basic-dark;
         text-transform: uppercase;
         font-weight: bold;
         position: relative;
     }
 
-    .promo__button{
+    .promo__button {
         width: 244px;
         height: 54px;
         position: absolute;
@@ -90,10 +92,82 @@
         color: #fff;
         border: 0;
         font-size: 16px;
-        top: 136%;
-        left: 17%;
+        top: 27%;
+        left: 13%;
         font-size: 16px;
         text-transform: uppercase;
+    }
+
+}
+
+/* Desktop */
+
+@include desktop {
+    .promo {
+        margin-bottom: 380px;
+    }
+
+    .promo__wrapper {
+        @include container-styles-desktop;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            height: 694px;
+            left: 50%;
+            top: 0;
+            background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../images/promo/cat-desktop.png" 1x, "../images/promo/cat-desktop@2x.png" 2x);
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+    }
+
+    .promo__title {
+        width: 414px;
+        text-align: left;
+        margin-left: 90px;
+        font-size: 43px;
+        line-height: 58px;
+        margin-bottom: 40px;
+        margin-top: 60px;
+        position: relative;
+    }
+
+    .promo__description {
+        width: 400px;
+        margin-left: 90px;
+        margin-bottom: 21px;
+        font-size: 14px;
+        line-height: 20px;
+        color: $basic-dark;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .promo__position-img {
+        position: relative;
+    }
+
+    .promo__img {
+        position: absolute;
+        left: 36.9%;
+        top: -33%;
+    }
+
+    .promo__button {
+        width: 244px;
+        height: 54px;
+        background-color: #68b738;
+        color: #fff;
+        border: 0;
+        font-size: 16px;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-left: 90px;
     }
 
 }

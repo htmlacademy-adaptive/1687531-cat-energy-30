@@ -16,7 +16,12 @@
 @mixin container-styles-tablet {
     width: 708px;
     margin: 0 auto;
-  }
+}
+
+@mixin container-styles-desktop {
+    width: 1220px;
+    margin: 0 auto;
+}
 
 
 @mixin phone {
@@ -26,7 +31,7 @@
 }
 
 @mixin table {
-    @media only screen and (min-width: $tablet-width) {
+    @media only screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
         @content;
     }
 }

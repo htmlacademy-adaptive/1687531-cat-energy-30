@@ -52,3 +52,30 @@
     }
 
 }
+
+/* Desktop */
+
+@include desktop{
+    .header {
+        box-sizing: border-box;
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .header__wrapper {
+        @include container-styles-desktop;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_wrapper-pic {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__logo {
+        margin-right: 13px;
+    }
+
+}

@@ -6,10 +6,15 @@
 @import "./global/page-body-wrapper.scss";
 @import "./global/button.scss";
 @import "./global/global.scss";
+
 /* BLOCKS */
+
+/* Index */
+
 @import "./blocks/index/header.scss";
 @import "./blocks/index/nav.scss";
 @import "./blocks/index/nav-list.scss";
+@import "./blocks/index/page-main.scss";
 @import "./blocks/index/promo.scss";
 @import "./blocks/index/programs.scss";
 @import "./blocks/index/advantages.scss";

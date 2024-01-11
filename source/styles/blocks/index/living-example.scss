@@ -1,3 +1,4 @@
+@include phone{
 .living-example {
     position: relative;
     background-color: $special-grey;
@@ -37,5 +38,82 @@
     margin: 0;
     margin-bottom: 20px;
     color: $special-dark;
+
+}
+
+}
+
+/* Table */
+
+@include table{
+    .living-example {
+        position: relative;
+        background-color: $basic-white;
+    }
+    
+    .living-example__wrapper {
+        @include container-styles-tablet;
+        padding-bottom: 210px;
+    }
+    
+    .living-example__title {
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 60px;
+        font-size: 49px;
+        line-height: 60px;
+    
+    }
+    
+    .living-example__description {
+        font-family: $secondary-font;
+        margin: 0;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 55px;
+        color: $special-dark;
+    
+    }
+}
+
+/* Desktop */
+
+@include desktop{
+
+    .living-example {
+        position: relative;
+        background-color: $basic-white;
+        width: 100%;
+        background: linear-gradient($basic-white 20%,$white-grey 2%);
+    }
+
+    .living-example__container{
+        display: flex;
+        justify-content: space-between;
+        @include container-styles-desktop;
+    }
+    
+    .living-example__wrapper {
+        width: 437px;
+    }
+    
+    .living-example__title {
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 60px;
+        font-size: 49px;
+        line-height: 60px;
+    
+    }
+    
+    .living-example__description {
+        font-family: $secondary-font;
+        margin: 0;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 55px;
+        color: $special-dark;
+    
+    }
 
 }
