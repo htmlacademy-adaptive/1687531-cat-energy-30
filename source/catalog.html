@@ -55,7 +55,7 @@
           </button>
           <ul class="nav__list">
             <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Каталог продукции</a></li>
+            <li class="nav__item"><a class="nav__link nav__link--catalog" href="#">Каталог продукции</a></li>
             <li class="nav__item"><a class="nav__link" href="form.html">Подбор программы</a></li>
           </ul>
         </nav>
@@ -103,7 +103,6 @@
                 <div class="catalog__product-card-item product product--chicken-1000g">
                   <div class="product__wrapper-items">
                     <div class="product__wrapper-img product__wrapper-img--big">
-
                       <picture>
                         <source media="(min-width: 768px)" width="161" height="171"
                           srcset="./images/product-table/catalog-2.png, ./images/product-table/catalog-2@2x.png 2x"><img
@@ -113,7 +112,6 @@
                       </a>
                     </div>
                     <div class="product__wrapper">
-
                       <h3 class="product__heading">Cat Energy PRO 1000 г</h3>
                       </a>
                       <dl class="product__descriptions">
@@ -196,7 +194,6 @@
                 <div class="catalog__product-card-item product product--buckwheat-500g">
                   <div class="product__wrapper-items">
                     <div class="product__wrapper-img">
-
                       <picture>
                         <source media="(min-width: 768px)" width="161" height="171"
                           srcset="./images/product-table/catalog-5.png , ./images/product-table/catalog-5@2x.png 2x">
@@ -206,7 +203,6 @@
                       </picture>
                     </div>
                     <div class="product__wrapper">
-
                       <h3 class="product__heading">Cat Energy slim 500 г</h3>
                       </a>
                       <dl class="product__descriptions">
@@ -219,7 +215,9 @@
                       </dl>
                     </div>
                   </div>
-                  <div class="product__wrapper-button"><a class="product__button button" href="#">Заказать</a></div>
+                  <div class="product__wrapper-button">
+                    <a class="product__button button" href="#">Заказать</a>
+                  </div>
                 </div>
               </div>
               <hr class="stripe">
@@ -227,7 +225,6 @@
                 <div class="catalog__product-card-item product product--buckwheat-1000g">
                   <div class="product__wrapper-items">
                     <div class="product__wrapper-img product__wrapper-img--big">
-
                       <picture>
                         <source media="(min-width: 768px)" width="161" height="171"
                           srcset="./images/product-table/catalog-6.png, ./images/product/catalog-6@2x.png  2x"><img
@@ -237,7 +234,6 @@
                       </a>
                     </div>
                     <div class="product__wrapper">
-
                       <h3 class="product__heading">Cat Energy slim 1000 г</h3>
                       </a>
                       <dl class="product__descriptions">
@@ -298,6 +294,7 @@
         <section class="add-product">
           <div class="add-product__wrapper add-product__wrapper--line">
             <h2 class="add-product__title">Дополнительные товары</h2>
+            <div class="add-product__wrapper-elements">
             <ul class="add-product__list">
               <li class="add-product__item">
                 <h3 class="add-product__heading">Сахарозаменитель</h3>
@@ -311,7 +308,7 @@
                 <h3 class="add-product__heading">питьевая вода</h3>
                 <div class="add-product__wrapper-text">
                   <span class="add-product__descriptions add-product__key">5 литров</span>
-                  <span class="add-product__descriptions add-product__meaning">50 ₽</span>
+                  <span class="add-product__descriptions add-product__meaning add-product__descriptions--necessary">50 ₽</span>
                 </div>
                 <a class="add-product__button button" href="#">заказать</a>
               </li>
@@ -336,34 +333,35 @@
               <p class="add-product__stock-descriptions">Закажите все и получите чехол для кота в подарок!</p>
             </div>
           </div>
+          </div>
         </section>
       </div>
     </main>
     <div class="page-main__wrapper-contacts">
-    <section class="contacts">
-      <div class="contacts__wrapper">
-        <span class="contacts__description">
-          приглашаем
-          к сотрудничеству
-          дилеров!
-        </span>
-        <span class="contacts__address">
-          ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург
-        </span>
-      </div>
-    </section>
-    </main>
-    <section class="map">
-      <h3 class="visually-hidden">Наше местоположение.</h3>
-      <iframe class="map__google-map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-        width="320" height="362" allowfullscreen
-        title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
-      </iframe>
-    </section>
-  </div>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <span class="contacts__description">
+            приглашаем
+            к сотрудничеству
+            дилеров!
+          </span>
+          <span class="contacts__address">
+            ул. Большая
+            Конюшенная, д. 19/8
+            Санкт-Петербург
+          </span>
+        </div>
+      </section>
+      </main>
+      <section class="map">
+        <h3 class="visually-hidden">Наше местоположение.</h3>
+        <iframe class="map__google-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+          width="320" height="362" allowfullscreen
+          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+        </iframe>
+      </section>
+    </div>
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__social social">

@@ -42,8 +42,6 @@
 @include table{
     .contacts{
         background-color: $white-grey;
-        width: 768px;
-        margin: 0 auto;
         &--index{
             background-color: $basic-white;
         }

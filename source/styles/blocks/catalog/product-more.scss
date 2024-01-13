@@ -1,3 +1,5 @@
+@include phone{
+
 .product-more{
     display: flex;
     flex-direction: column;
@@ -55,4 +57,152 @@
 
 .product-more__button{
     color:$special-dark;
+}
+
+}
+
+/* Table */
+
+@include table{
+
+    .product-more{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 323px;
+        position: relative;
+        background-color: $basic-white;
+        border: 2px solid $white-grey;
+    
+        &::before, &::after{
+            content: "";
+            position: absolute;
+            background-color: $cross-grey;
+        }
+        &::before{
+            width: 2px;
+            height: 60px;
+            left: 49%;
+            top:13%;
+        }
+        &::after{
+            width: 2px;
+            height: 60px;
+            left: 49%;
+            transform: rotate(90deg);
+            top:13%;
+        }
+    
+    }
+    
+    .product-more__heading{
+        font-size: 16px;
+        line-height: 20px;
+        color: $dark;
+        text-transform: uppercase;
+        position: absolute;
+        width: 140px;
+        top:40%;
+        text-align: center;
+    }
+    
+    .product-more__descriptions{
+        font-family: $secondary-font;
+        font-size: 16px;
+        line-height: 16px;
+        color: $special-dark;
+        position: absolute;
+        top: 54%;
+        width: 167px;
+        text-align: center;
+    }
+    
+    .product-more__wrapper-button{
+        background-color: $white-grey;
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        padding: 10px;
+        width: 250px;
+        box-sizing: border-box;
+    }
+    
+    .product-more__button{
+        color:$special-dark;
+    }
+    
+}
+
+
+/* Desktop */
+
+@include desktop{
+    .product-more{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 323px;
+        position: relative;
+        background-color: $basic-white;
+        border: 2px solid $white-grey;
+    
+        &::before, &::after{
+            content: "";
+            position: absolute;
+            background-color: $cross-grey;
+        }
+        &::before{
+            width: 2px;
+            height: 60px;
+            left: 49%;
+            top:13%;
+        }
+        &::after{
+            width: 2px;
+            height: 60px;
+            left: 49%;
+            transform: rotate(90deg);
+            top:13%;
+        }
+    
+    }
+    
+    .product-more__heading{
+        font-size: 16px;
+        line-height: 20px;
+        color: $dark;
+        text-transform: uppercase;
+        position: absolute;
+        width: 140px;
+        top:40%;
+        text-align: center;
+    }
+    
+    .product-more__descriptions{
+        font-family: $secondary-font;
+        font-size: 16px;
+        line-height: 16px;
+        color: $special-dark;
+        position: absolute;
+        top: 54%;
+        width: 167px;
+        text-align: center;
+    }
+    
+    .product-more__wrapper-button{
+        background-color: $white-grey;
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        padding: 10px;
+        width: 169px;
+        box-sizing: border-box;
+    }
+    
+    .product-more__button{
+        color:$special-dark;
+    }
+    
 }

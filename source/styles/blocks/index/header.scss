@@ -60,6 +60,10 @@
         box-sizing: border-box;
         padding-top: 55px;
         padding-bottom: 55px;
+
+        &--index{
+            background-color: transparent;
+        }
     }
 
     .header__wrapper {
