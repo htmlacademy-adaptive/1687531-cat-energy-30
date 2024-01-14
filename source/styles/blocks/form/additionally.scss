@@ -1,3 +1,5 @@
+@include phone{
+
 .additionally{
     margin-bottom: 34px;
 }
@@ -56,4 +58,141 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
+}
+
+}
+
+/* Table */
+
+@include table{
+    .additionally{
+        margin-bottom: 52px;
+    }
+    
+    .additionally__wrapper{
+        margin-bottom: 34px;
+    }
+    
+    .additionally__buy-more {
+        display: inline-block;
+        padding-right: 20px;
+        font-size: 24px;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .additionally__list{
+        width: 533px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 65px;
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+    
+    
+    .additionally__item{
+        width: 221px;
+    }
+    
+    .additionally__label{
+        display: flex;
+        align-items: center;
+    }
+    
+    .additionally__form{
+        margin: 0;
+        position: relative;
+        width: 26px;
+        height: 26px;
+        appearance: none;
+        border: 1px solid $grey;
+        margin-right: 15px;
+    
+        &:checked::before {
+            content: '';
+            position: absolute;
+            top: 22%;
+            left: 18%;
+            background-image: url("../../images/additionally/daw.svg");
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 24px;
+        }
+    }
+    .additionally__description {
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
+    
+}
+
+/* Desktop */
+
+@include desktop{
+    .additionally{
+        margin-bottom: 52px;
+    }
+    
+    .additionally__wrapper{
+        margin-bottom: 34px;
+    }
+    
+    .additionally__buy-more {
+        display: inline-block;
+        padding-right: 20px;
+        font-size: 24px;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .additionally__list{
+        width: 1220px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+    
+    
+    .additionally__item{
+        width: 221px;
+    }
+    
+    .additionally__label{
+        display: flex;
+        align-items: center;
+    }
+    
+    .additionally__form{
+        margin: 0;
+        position: relative;
+        width: 26px;
+        height: 26px;
+        appearance: none;
+        border: 1px solid $grey;
+        margin-right: 15px;
+    
+        &:checked::before {
+            content: '';
+            position: absolute;
+            top: 22%;
+            left: 18%;
+            background-image: url("../../images/additionally/daw.svg");
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 24px;
+        }
+    }
+    .additionally__description {
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
+    
 }

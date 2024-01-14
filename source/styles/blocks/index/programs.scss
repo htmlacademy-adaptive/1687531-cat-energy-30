@@ -71,6 +71,12 @@
         }
     }
 
+    .programs__link-place {
+        &:active {
+            opacity: 30%;
+        }
+    }
+
     .programs__link-catalog {
         font-size: 16px;
         line-height: 16px;
@@ -166,6 +172,12 @@
         margin-bottom: 48px;
     }
 
+    .programs__link-place {
+        &:active {
+            opacity: 30%;
+        }
+    }
+
     .programs__link-catalog {
         font-size: 20px;
         color: $basic-dark;
@@ -189,7 +201,7 @@
 
 /* Desktop */
 
-@include desktop{
+@include desktop {
 
     .programs__wrapper {
         @include container-styles-desktop;
@@ -260,6 +272,12 @@
         color: $basic-dark;
     }
 
+    .programs__link-place {
+        &:active {
+            opacity: 30%;
+        }
+    }
+
     .programs__link-catalog {
         font-size: 18px;
         color: $basic-dark;
@@ -280,5 +298,3 @@
         }
     }
 }
-
-

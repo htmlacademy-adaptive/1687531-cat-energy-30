@@ -7,6 +7,10 @@
         width: 128px;
         height: 24px;
         position: relative;
+
+        &:active{
+            opacity: 30%;
+        }
     }
 
     .social__list {
@@ -46,6 +50,15 @@
 
     .social__icon {
         fill: $special-dark;
+
+        &:hover{
+            fill:$basic-green;
+        }
+
+        &:active{
+            fill:$basic-green;
+            opacity: 30%;
+        }
     }
 
 }
@@ -63,6 +76,10 @@
         width: 128px;
         height: 24px;
         position: relative;
+
+        &:active{
+            opacity: 30%;
+        }
     }
 
     .social__list {
@@ -83,6 +100,15 @@
 
     .social__icon {
         fill: $special-dark;
+
+        &:hover{
+            fill:$basic-green;
+        }
+
+        &:active{
+            fill:$basic-green;
+            opacity: 30%;
+        }
     }
 
 }
@@ -100,6 +126,10 @@
         width: 128px;
         height: 24px;
         position: relative;
+
+        &:active{
+            opacity: 30%;
+        }
     }
 
     .social__list {
@@ -120,6 +150,15 @@
 
     .social__icon {
         fill: $special-dark;
+
+        &:hover{
+            fill:$basic-green;
+        }
+
+        &:active{
+            fill:$basic-green;
+            opacity: 30%;
+        }
     }
 
 }

@@ -1,3 +1,5 @@
+@include phone{
+
 .program-selection__wrapper-text{
     @include container-styles;
 }
@@ -14,4 +16,53 @@
     line-height: 14px;
     text-transform: uppercase;
     margin-bottom: 39px;
+}
+
+}
+
+/* Table */
+
+@include table {
+
+    .program-selection__wrapper{
+        width: 628px;
+        margin: 0 auto;
+    }
+    
+    .program-selection__title{
+        padding-top: 65px;
+        font-size: 45px;
+        line-height: 36px;
+        margin-bottom: 37px;
+    }
+    
+    .program-selection__subtitle{
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        margin-bottom: 66px;
+    }
+    
+}
+
+/* Desktop */
+
+@include desktop{
+    .program-selection__wrapper{
+        @include container-styles-desktop;
+    }
+    
+    .program-selection__title{
+        padding-top: 65px;
+        font-size: 45px;
+        line-height: 36px;
+        margin-bottom: 37px;
+    }
+    
+    .program-selection__subtitle{
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        margin-bottom: 66px;
+    }
 }

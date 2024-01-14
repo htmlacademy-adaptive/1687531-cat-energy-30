@@ -1,3 +1,5 @@
+@include phone{
+
 .cat-data{
     @include container-styles;
 }
@@ -36,6 +38,93 @@
         margin-bottom: 24px;
     }
 
-    
 }
+
+}
+
+
+/* Table */
+
+@include table{
+    
+    .cat-data__item{
+        &:not(:last-child) {
+            margin-bottom: 14px;
+          }
+    }
+    
+    .cat-data__name{
+        font-size: 16px;
+        line-height: 18px;
+        color:$special-dark;
+        text-transform: uppercase;
+        margin-right: 13px;
+    }
+    
+    .cat-data__name-form{
+        padding: 14px 0 13px 15px;
+        font-size: 16px;
+        color:$special-dark;
+        text-transform: uppercase;
+        border:1px solid $input-border;
+    
+        &--nickname{
+            width: 547px;
+        }
+    
+        &--wt{
+            width: 518px;
+        }
+    
+        &--age{
+            width: 471px;
+            margin-bottom: 72px;
+        }
+    
+    }
+}
+
+
+/* Desktop */
+
+@include desktop{
+    .cat-data__item{
+        width: 700px;
+        
+        &:not(:last-child) {
+            margin-bottom: 14px;
+          }
+    }
+    
+    .cat-data__name{
+        font-size: 16px;
+        line-height: 18px;
+        color:$special-dark;
+        text-transform: uppercase;
+        margin-right: 13px;
+    }
+    
+    .cat-data__name-form{
+        padding: 14px 0 13px 15px;
+        font-size: 16px;
+        color:$special-dark;
+        text-transform: uppercase;
+        border:1px solid $input-border;
+    
+        &--nickname{
+            width: 547px;
+        }
+    
+        &--wt{
+            width: 518px;
+        }
+    
+        &--age{
+            width: 471px;
+            margin-bottom: 72px;
+        }
+    
+    }
+}
+
 

@@ -21,6 +21,20 @@
 
     .header__logo {
         margin-right: 56px;
+
+        &:hover{
+            opacity: 80%;
+        }
+
+        &:active{
+            opacity: 60%;
+        }
+    }
+
+    .header__cat-energy{
+        &:active{
+            opacity: 30%;
+        }
     }
 
 }
@@ -49,6 +63,20 @@
 
     .header__logo {
         margin-right: 13px;
+
+        &:hover{
+            opacity: 80%;
+        }
+
+        &:active{
+            opacity: 60%;
+        }
+    }
+
+    .header__cat-energy{
+        &:active{
+            opacity: 30%;
+        }
     }
 
 }
@@ -80,6 +108,20 @@
 
     .header__logo {
         margin-right: 13px;
+
+        &:hover{
+            opacity: 80%;
+        }
+
+        &:active{
+            opacity: 60%;
+        }
+    }
+
+    .header__cat-energy{
+        &:active{
+            opacity: 30%;
+        }
     }
 
 }

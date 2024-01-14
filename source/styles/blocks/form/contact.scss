@@ -1,3 +1,5 @@
+@include phone{
+
 .contact{
     margin-bottom:24px ;
 }
@@ -58,4 +60,142 @@
     }
 
     
+}
+
+}
+
+/* Table */
+
+@include table{
+    .contact{
+        margin-bottom:24px ;
+    }
+    
+    .contact__wrapper {
+        margin-bottom: 76px;
+    }
+    
+    .contact__title {
+        width: 500px;
+        font-size: 25px;
+        line-height: 26px;
+        display: inline-block;
+        padding-right: 25px;
+    }
+    
+    .contact__list-wrapper{
+        margin-bottom: 65px;
+    }
+
+    .contact__item {
+        &:not(:last-child) {
+            margin-bottom: 14px;
+        }
+    }
+    
+    .contact__label {
+        font-size: 16px;
+        line-height: 18px;
+        color: $special-dark;
+        margin-right: 13px;
+    }
+    
+    .contact__input {
+        padding: 14px 0 13px 9px;
+        font-size: 12px;
+        line-height: 17px;
+        color: #444;
+        text-transform: uppercase;
+        position: relative;
+        border: 1px solid $grey;
+    
+        &--email {
+            width: 544px;
+            background-size: 17px 13px;
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+            background-image: url("../../images/contact/mail.svg");
+        }
+    
+    
+        &--phone {
+            width: 523px;
+            background-image: url("../../images/contact/phone.svg");
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+        }
+    
+        
+    }
+}
+
+/* Desktop */
+
+@include desktop{
+    .contact{
+        margin-bottom:24px ;
+    }
+    
+    .contact__wrapper {
+        margin-bottom: 76px;
+    }
+    
+    .contact__title {
+        width: 500px;
+        font-size: 25px;
+        line-height: 26px;
+        display: inline-block;
+        padding-right: 25px;
+    }
+    
+    .contact__list-wrapper{
+        margin-bottom: 65px;
+    }
+
+    .contact__list{
+        display: flex;
+        justify-content: space-between;
+        width: 1220px;
+    }
+
+    .contact__item {
+        &:not(:last-child) {
+            margin-bottom: 14px;
+        }
+    }
+    
+    .contact__label {
+        font-size: 16px;
+        line-height: 18px;
+        color: $special-dark;
+        margin-right: 13px;
+    }
+    
+    .contact__input {
+        padding: 14px 0 13px 9px;
+        font-size: 12px;
+        line-height: 17px;
+        color: #444;
+        text-transform: uppercase;
+        position: relative;
+        border: 1px solid $grey;
+    
+        &--email {
+            width: 444px;
+            background-size: 17px 13px;
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+            background-image: url("../../images/contact/mail.svg");
+        }
+    
+    
+        &--phone {
+            width: 400px;
+            background-image: url("../../images/contact/phone.svg");
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+        }
+    
+        
+    }
 }
