@@ -16,6 +16,10 @@
         margin-right: 16px;
     }
 
+    .product__link-product{
+        color:$basic-dark;
+    }
+
     .product__heading {
         font-size: 16px;
         line-height: 20px;
@@ -74,6 +78,10 @@
         position: relative;
         width: 161px;
         height: 151px;
+    }
+
+    .product__link-product{
+        color:$basic-dark;
     }
 
     .product__image{
@@ -168,6 +176,10 @@
         position: relative;
         width: 161px;
         height: 151px;
+    }
+
+    .product__link-product{
+        color:$basic-dark;
     }
 
     .product__image{

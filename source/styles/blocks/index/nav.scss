@@ -1,3 +1,88 @@
+@include phone{
+
+    .nav__toggle{
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        position: absolute;
+        padding: 0;
+        border: none;
+    }
+
+    .nav--opened .nav__toggle {
+        top: 24px;
+        right: 28px;
+        position: absolute;
+    
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 24px;
+          left: 18px;
+          width: 24px;
+          height: 2px;
+          background-color: $dark;
+          top:11px;
+          left: 0;
+        }
+    
+        &::before {
+          transform: rotate(45deg);
+          box-shadow: none;
+        }
+    
+        &::after {
+          transform: rotate(-45deg);
+        }
+
+    }
+
+    .nav--closed .nav__toggle {
+        top: 24px;
+        right: 28px;
+        position: absolute;
+    
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 24px;
+          left: 18px;
+          width: 24px;
+          height: 2px;
+          background-color: $dark;
+          top:3px;
+          left: 0;
+          box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+
+        }
+    }
+
+    .nav__list {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        left: 0px;
+        width: 320px;
+        text-align: center;
+        top: 100%;
+        background-color: $basic-white;
+    }
+
+    .nav__item{
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 22px 0 24px 0;
+        border-top: 1px solid $menu-border;
+    }
+
+    .nav__link{
+        color:$basic-dark;
+    }
+}
+
+
 @include table {
     .nav__toggle {
         display: none;

@@ -43,6 +43,14 @@
         border-radius: 50%;
         background-color: $basic-green;
     }
+
+    &:hover{
+        border: 1px solid $hover-input-md;
+    }
+
+    &:disabled{
+        opacity: 30%;
+    }
 }
 
 .purpose-program__name {
@@ -100,6 +108,14 @@
             border-radius: 50%;
             background-color: $basic-green;
         }
+
+        &:hover{
+            border: 1px solid $hover-input-md;
+        }
+
+        &:disabled{
+            opacity: 30%;
+        }
     }
     
     .purpose-program__name {
@@ -155,6 +171,14 @@
             height: 13px;
             border-radius: 50%;
             background-color: $basic-green;
+        }
+
+        &:hover{
+            border: 1px solid $hover-input-md;
+        }
+
+        &:disabled{
+            opacity: 30%;
         }
     }
     
