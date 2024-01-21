@@ -28,7 +28,7 @@
             position: absolute;
             width: 280px;
             border-top: 1px solid $basic-grey;
-            top: 20px;
+            top: 17px;
         }
 
         &::after {
@@ -37,7 +37,7 @@
             position: absolute;
             width: 280px;
             border-top: 1px solid $basic-grey;
-            bottom: 20px;
+            bottom: 23px;
         }
     }
 
@@ -50,6 +50,7 @@
 
     .social__icon {
         fill: $special-dark;
+        margin-bottom: -2px;
 
         &:hover,
         &:focus{
@@ -75,8 +76,8 @@
     }
 
     .social__img {
-        width: 128px;
-        height: 24px;
+        width: 129px;
+        height: 28px;
         position: relative;
 
         &:active{
@@ -91,6 +92,7 @@
         display: flex;
         justify-content: center;
         position: relative;
+        padding: 5px 0 0 33px;   
     }
 
     .social__items {
@@ -124,11 +126,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 1229px;
     }
 
     .social__img {
-        width: 128px;
-        height: 24px;
+        width: 145px;
+        height: 23px;
         position: relative;
 
         &:active{
@@ -143,6 +146,7 @@
         display: flex;
         justify-content: center;
         position: relative;
+        padding: 3px 0 0px 22px;
     }
 
     .social__items {

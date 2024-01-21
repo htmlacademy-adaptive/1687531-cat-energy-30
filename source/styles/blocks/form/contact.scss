@@ -23,7 +23,7 @@
 
 .contact__item {
     &:not(:last-child) {
-        margin-bottom: 14px;
+        margin-bottom: 13px;
     }
 }
 
@@ -31,22 +31,24 @@
     font-size: 16px;
     line-height: 18px;
     color: $special-dark;
-    margin-right: 13px;
+    margin-right: 11px;
+    text-transform: uppercase;
 }
 
 .contact__input {
-    padding: 14px 0 13px 9px;
-    font-size: 12px;
-    line-height: 17px;
+    padding: 13px 0 13px 14px;
+    font-size: 16px;
+    line-height: 18px;
     color: #444;
     text-transform: uppercase;
     position: relative;
     border: 1px solid $grey;
+    font-family: $primary-font;
 
     &--email {
-        width: 194px;
+        width: 200px;
         background-repeat: no-repeat;
-        background-position: right 14px center;
+        background-position: right 11px center;
         background-image: url("../../images/contact/mail.svg");
 
         &:focus{
@@ -60,10 +62,10 @@
 
 
     &--phone {
-        width: 173px;
+        width: 183px;
         background-image: url("../../images/contact/phone.svg");
         background-repeat: no-repeat;
-        background-position: right 14px center;
+        background-position: right 13px center;
 
     }
 
@@ -88,50 +90,47 @@
 
 @include table{
     .contact{
-        margin-bottom:24px ;
+        margin-bottom:68px ;
     }
     
     .contact__wrapper {
-        margin-bottom: 76px;
+        margin-bottom: 73px;
     }
     
     .contact__title {
-        width: 500px;
-        font-size: 25px;
-        line-height: 26px;
+        width: 552px;
+        font-size: 36px;
+        line-height: 36px;
         display: inline-block;
-        padding-right: 25px;
-    }
-    
-    .contact__list-wrapper{
-        margin-bottom: 65px;
     }
 
     .contact__item {
         &:not(:last-child) {
-            margin-bottom: 14px;
+            margin-bottom: 21px;
         }
     }
     
     .contact__label {
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 20px;
+        line-height: 30px;
         color: $special-dark;
-        margin-right: 13px;
+        margin-right: 11px;
+        text-transform: uppercase;
     }
     
     .contact__input {
-        padding: 14px 0 13px 9px;
-        font-size: 12px;
-        line-height: 17px;
+        padding: 10px 0 11px 18px;
+        font-size: 20px;
+        line-height: 29px;
+        font-family: $primary-font;
         color: #444;
         text-transform: uppercase;
         position: relative;
         border: 1px solid $grey;
     
         &--email {
-            width: 544px;
-            background-size: 17px 13px;
+            width: 532px;
+            background-size: 18px 13px;
             background-repeat: no-repeat;
             background-position: right 14px center;
             background-image: url("../../images/contact/mail.svg");
@@ -147,7 +146,7 @@
     
     
         &--phone {
-            width: 523px;
+            width: 511px;
             background-image: url("../../images/contact/phone.svg");
             background-repeat: no-repeat;
             background-position: right 14px center;
@@ -176,25 +175,26 @@
     }
     
     .contact__wrapper {
-        margin-bottom: 76px;
+        margin-bottom: 72px;
     }
     
     .contact__title {
-        width: 500px;
-        font-size: 25px;
-        line-height: 26px;
+        width: 536px;
+        font-size: 36px;
+        line-height: 36px;
         display: inline-block;
         padding-right: 25px;
+        padding-left: 8px;
     }
     
     .contact__list-wrapper{
-        margin-bottom: 65px;
+        margin-bottom: 58px;
     }
 
     .contact__list{
         display: flex;
-        justify-content: space-between;
-        width: 1220px;
+        column-gap: 53px;
+        width: 1230px;
     }
 
     .contact__item {
@@ -204,24 +204,32 @@
     }
     
     .contact__label {
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 20px;
+        line-height: 29px;
         color: $special-dark;
-        margin-right: 13px;
+        margin-right: 11px;
+        text-transform: uppercase;
+        padding-left: 8px;
+
+        &--phone{
+            margin-right: 11px;
+            padding-left: 28px;
+        }
     }
     
     .contact__input {
-        padding: 14px 0 13px 9px;
-        font-size: 12px;
-        line-height: 17px;
+        padding: 11px 0 11px 20px;
+        font-size: 20px;
+        line-height: 29px;
+        font-family: $primary-font;
         color: #444;
         text-transform: uppercase;
         position: relative;
         border: 1px solid $grey;
     
         &--email {
-            width: 444px;
-            background-size: 17px 13px;
+            width: 472px;
+            background-size: 22px 13px;
             background-repeat: no-repeat;
             background-position: right 14px center;
             background-image: url("../../images/contact/mail.svg");
@@ -237,10 +245,10 @@
     
     
         &--phone {
-            width: 400px;
+            width: 450px;
             background-image: url("../../images/contact/phone.svg");
             background-repeat: no-repeat;
-            background-position: right 14px center;
+            background-position: right 15px center;
         }
 
         &:hover{

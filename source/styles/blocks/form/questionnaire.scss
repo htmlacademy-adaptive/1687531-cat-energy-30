@@ -1,7 +1,7 @@
 @include phone {
 
     .questionnaire {
-        margin-bottom: 32px;
+        margin-bottom: 31px;
     }
 
     .questionnaire__send {
@@ -13,16 +13,19 @@
         width: 100%;
         margin-bottom: 21px;
         padding: 10px 56px;
+        font-family: $primary-font;
         background-color: $basic-green;
         border: none;
         color: $basic-white;
         font-size: 16px;
+        line-height: 20px;
         text-transform: uppercase;
     }
 
     .questionnaire__required-form {
         font-family: $secondary-font;
-        font-size: 13px;
+        font-size: 14px;
+        line-height: 16px;
     }
 }
 
@@ -41,18 +44,22 @@
 
     .questionnaire__send-form {
         width: 284px;
-        padding: 10px 56px;
+        padding: 14px 56px;
         background-color: $basic-green;
         border: none;
         color: $basic-white;
-        font-size: 16px;
+        font-size: 20px;
+        line-height: 26px;
+        font-family: $primary-font;
         text-transform: uppercase;
-        margin-right: 60px;
+        margin-right: 58px;
     }
 
     .questionnaire__required-form {
         font-family: $secondary-font;
-        font-size: 13px;
+        font-size: 16px;
+        line-height: 16px;
+        padding-bottom: 6px;
     }
 }
 
@@ -61,11 +68,12 @@
 
 @include desktop{
     .questionnaire {
-        margin-bottom: 60px;
+        margin-bottom: 79px;
     }
 
     .questionnaire__wrapper-index{
         @include container-styles-desktop;
+        width: 1230px;
         display: flex;
         flex-direction: row;
     }
@@ -73,21 +81,26 @@
     .questionnaire__send {
         display: flex;
         align-items: center;
+        margin-left: 8px;
     }
 
     .questionnaire__send-form {
         width: 570px;
-        padding: 10px 56px;
+        padding: 14px 56px;
         background-color: $basic-green;
         border: none;
         color: $basic-white;
-        font-size: 16px;
+        font-size: 20px;
+        line-height: 26px;
+        font-family: $primary-font;
         text-transform: uppercase;
-        margin-right: 60px;
+        margin-right: 77px;
     }
 
     .questionnaire__required-form {
         font-family: $secondary-font;
-        font-size: 13px;
+        font-size: 16px;
+        line-height: 16px;
+        padding-bottom: 4px;
     }
 }

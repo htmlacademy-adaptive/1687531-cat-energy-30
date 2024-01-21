@@ -37,8 +37,8 @@
     .additionally__form {
         margin: 0;
         position: relative;
-        width: 26px;
-        height: 26px;
+        width: 30px;
+        height: 30px;
         appearance: none;
         border: 1px solid $grey;
         margin-right: 15px;
@@ -79,26 +79,24 @@
     }
 
     .additionally__wrapper {
-        margin-bottom: 34px;
+        margin-bottom: 54px;
     }
 
     .additionally__buy-more {
         display: inline-block;
-        padding-right: 20px;
-        font-size: 24px;
-        line-height: 26px;
-        letter-spacing: 0em;
+        padding-right: 41px;
+        font-size: 36px;
+        line-height: 36px;
         text-align: left;
     }
 
     .additionally__list {
-        width: 533px;
+        width: 565px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        column-gap: 65px;
         justify-content: space-between;
-        row-gap: 20px;
+        row-gap: 32px;
     }
 
 
@@ -114,21 +112,22 @@
     .additionally__form {
         margin: 0;
         position: relative;
-        width: 26px;
-        height: 26px;
+        width: 40px;
+        height: 40px;
         appearance: none;
         border: 1px solid $grey;
-        margin-right: 15px;
+        margin-right: 19px;
 
         &:checked::before {
             content: '';
             position: absolute;
-            top: 22%;
-            left: 18%;
+            top: 24%;
+            left: 17%;
             background-image: url("../../images/additionally/daw.svg");
             background-repeat: no-repeat;
-            width: 18px;
-            height: 24px;
+            background-size: contain;
+            width: 26px;
+            height: 47px;
         }
 
         &:hover{
@@ -141,8 +140,8 @@
     }
 
     .additionally__description {
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 20px;
+        line-height: 29px;
         text-transform: uppercase;
     }
 
@@ -152,20 +151,20 @@
 
 @include desktop {
     .additionally {
-        margin-bottom: 52px;
+        margin-bottom: 60px;
     }
 
     .additionally__wrapper {
-        margin-bottom: 34px;
+        margin-bottom: 54px;
     }
 
     .additionally__buy-more {
         display: inline-block;
-        padding-right: 20px;
-        font-size: 24px;
-        line-height: 26px;
-        letter-spacing: 0em;
+        padding-right: 41px;
+        font-size: 36px;
+        line-height: 36px;
         text-align: left;
+        padding-left: 8px;
     }
 
     .additionally__list {
@@ -173,8 +172,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
-        row-gap: 20px;
+        column-gap: 104px;
+        margin-left: 9px;
     }
 
 
@@ -190,21 +189,22 @@
     .additionally__form {
         margin: 0;
         position: relative;
-        width: 26px;
-        height: 26px;
+        width: 40px;
+        height: 40px;
         appearance: none;
         border: 1px solid $grey;
-        margin-right: 15px;
+        margin-right: 19px;
 
         &:checked::before {
             content: '';
             position: absolute;
-            top: 22%;
+            top: 25%;
             left: 18%;
             background-image: url("../../images/additionally/daw.svg");
             background-repeat: no-repeat;
-            width: 18px;
-            height: 24px;
+            background-size: contain;
+            width: 25px;
+            height: 23px;
         }
 
         &:hover{
@@ -217,8 +217,8 @@
     }
 
     .additionally__description {
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 20px;
+        line-height: 29px;
         text-transform: uppercase;
     }
 

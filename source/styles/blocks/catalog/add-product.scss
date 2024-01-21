@@ -3,12 +3,12 @@
     .add-product {
         width: 320px;
         margin: 0 auto;
-        margin-bottom: 7px;
+        margin-bottom: 21px;
     }
 
     .add-product__wrapper {
         @include container-styles;
-        padding: 35px 0;
+        padding: 24px 0;
         z-index: 2;
         position: relative;
 
@@ -17,8 +17,8 @@
             position: absolute;
             width: 500%;
             height: 2px;
-            left: 95%;
-            top: 5%;
+            left: 88%;
+            top: 4%;
             background-color: #68b738;
             z-index: 1;
         }
@@ -26,10 +26,10 @@
     }
 
     .add-product__title {
-        font-size: 19px;
+        font-size: 24px;
         line-height: 24px;
         color: $basic-dark;
-        margin-bottom: 36px;
+        margin-bottom: 34px;
     }
 
 
@@ -38,7 +38,7 @@
         display: flex;
         flex-direction: column;
         border-top: 1px solid $grey;
-        padding: 13px 0;
+        padding: 13px 0 18px;
 
         &:last-child {
             border-bottom: 1px solid $grey;
@@ -47,7 +47,7 @@
     }
 
     .add-product__heading {
-        font-size: 13px;
+        font-size: 16px;
         line-height: 16px;
         color: $special-dark-two;
         text-transform: uppercase;
@@ -63,6 +63,7 @@
     .add-product__descriptions {
         font-family: $secondary-font;
         font-size: 14px;
+        line-height: 14px;
     }
 
     .add-product__button {
@@ -102,7 +103,7 @@
             position: absolute;
             width: 78px;
             height: 80px;
-            top: 61px;
+            top: 59px;
             left: 36%;
             background-image: url("../../images/add-product-stock/gift.svg");
             background-repeat: no-repeat;
@@ -117,7 +118,7 @@
         display: block;
         position: relative;
         top: 188px;
-        left: 53px;
+        left: 57px;
         width: 162px;
     }
 
@@ -133,7 +134,7 @@
 
     .add-product__wrapper {
         @include container-styles-tablet;
-        padding: 35px 0;
+        padding: 69px 0;
         z-index: 2;
         position: relative;
 
@@ -143,7 +144,7 @@
             width: 500%;
             height: 2px;
             left: -300%;
-            top: 54px;
+            top: 91px;
             background-color: #68b738;
             z-index: -1;
         }
@@ -151,13 +152,13 @@
     }
 
     .add-product__title {
-        font-size: 26px;
+        font-size: 36px;
         line-height: 36px;
         color: $basic-dark;
         margin-bottom: 80px;
         padding-left: 41px;
         background-color: $basic-white;
-        width: 371px;
+        width: 377px;
     }
 
     .add-product__list {
@@ -168,8 +169,8 @@
     .add-product__item {
         display: grid;
         position: relative;
-        row-gap: 25px;
-        padding: 26px 38px 27px 38px;
+        row-gap: 24px;
+        padding: 25px 38px 28px;
 
         &:not(:first-child)::before {
             content: "";
@@ -183,8 +184,8 @@
     }
 
     .add-product__heading {
-        font-size: 15px;
-        line-height: 16px;
+        font-size: 20px;
+        line-height: 20px;
         color: $special-dark-two;
         text-transform: uppercase;
         grid-row: 1;
@@ -194,14 +195,26 @@
         display: flex;
         justify-content: flex-end;
         grid-row: 1;
+        padding-top: 2px;
     }
 
     .add-product__descriptions {
         font-family: $secondary-font;
         font-size: 16px;
+        line-height: 20px;
+        margin-right: 50px;
 
-        &:not(:last-child) {
-            margin-right: 49px;
+        &--five {
+            margin-right: 59px;
+        }
+    }
+
+    .add-product__meaning {
+        width: 43px;
+        margin: 0;
+
+        &--necessary {
+            width: 34px;
         }
     }
 
@@ -223,7 +236,7 @@
         z-index: 1;
         text-align: center;
         box-sizing: border-box;
-        margin-bottom: 191px;
+        margin-bottom: 137px;
 
         &::before {
             content: "";
@@ -243,7 +256,7 @@
             position: absolute;
             width: 78px;
             height: 80px;
-            top: 61px;
+            top: 56px;
             left: 11%;
             background-image: url("../../images/add-product-stock/gift.svg");
             background-repeat: no-repeat;
@@ -258,7 +271,7 @@
         display: block;
         position: relative;
         text-align: left;
-        top: 75px;
+        top: 70px;
         left: 421px;
         width: 162px;
     }
@@ -274,158 +287,164 @@
 
     .add-product__wrapper {
         @include container-styles-desktop;
-        padding: 35px 0;
         z-index: 2;
         position: relative;
 
         &::before {
             content: "";
             position: absolute;
-            width: 296%;
+            width: 297%;
             height: 2px;
             left: -300%;
-            top: 54px;
+            top: 22px;
             background-color: #68b738;
             z-index: -1;
         }
-            &::after {
-                content: "";
-                position: absolute;
-                width: 168%;
-                height: 2px;
-                right: -100%;
-                top: 54px;
-                background-color: #68b738;
-                z-index: -1;
-            }
 
+        &::after {
+            content: "";
+            position: absolute;
+            width: 169%;
+            height: 2px;
+            right: -100%;
+            top: 22px;
+            background-color: #68b738;
+            z-index: -1;
         }
 
-        .add-product__title {
-            font-size: 28px;
-            line-height: 36px;
-            color: $basic-dark;
-            margin-bottom: 80px;
-            background-color: $basic-white;
-            width: 371px;
-        }
-
-        .add-product__list{
-            width: 896px;
-        }
-
-
-        .add-product__item {
-            display: flex;
-            padding: 15px 0 17px 0;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-    
-            &::before {
-                content: "";
-                display: block;
-                height: 1px;
-                width: 100%;
-                background-color: $grey;
-                position: absolute;
-                top: 0;
-            }
-
-            &:last-child::after{
-                content: "";
-                display: block;
-                height: 1px;
-                width: 100%;
-                background-color: $grey;
-                position: absolute;
-                bottom: 0;
-            }
-        }
-    
-        .add-product__heading {
-            font-size: 15px;
-            line-height: 16px;
-            color: $special-dark-two;
-            text-transform: uppercase;
-            width: 325px;
-        }
-
-        .add-product__wrapper-text {
-            display: flex;
-            justify-content: space-between;
-            width: 276px;
-        }
-    
-        .add-product__descriptions {
-            font-family: $secondary-font;
-            font-size: 16px;
-
-            &--necessary{
-                padding-right: 8px;
-            }
-        }
-
-        .add-product__button {
-            color: $basic-white;
-            background-color: $basic-green;
-            text-align: center;
-            font-size: 16px;
-            line-height: 20px;
-            text-transform: uppercase;
-            padding: 10px;
-            width: 244px;
-            box-sizing: border-box;
-            margin-left: 40px;
-        }
-
-        .add-product__stock {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            box-sizing: border-box;
-            padding-bottom: 219px;
-    
-            &::before {
-                content: "";
-                display: inline-block;
-                position: absolute;
-                width: 245px;
-                height: 288px;
-                left: 0;
-                background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../images/add-product-stock/cat-bag.png" 1x, "../images/add-product-stock/cat-bag@2x.png" 2x);
-                background-position: center;
-                background-repeat: no-repeat;
-                z-index: -1;
-            }
-    
-            &::after {
-                content: "";
-                position: absolute;
-                width: 78px;
-                height: 80px;
-                top: 61px;
-                left: 54%;
-                background-image: url("../../images/add-product-stock/gift.svg");
-                background-repeat: no-repeat;
-            }
-        }
-    
-        .add-product__stock-descriptions {
-            font-family: $secondary-font;
-            font-size: 16px;
-            line-height: 20px;
-            color: $basic-white;
-            display: block;
-            position: relative;
-            top: 188px;
-            left: 53px;
-            width: 162px;
-        }
-
-        .add-product__wrapper-elements{
-            display: flex;
-            column-gap: 80px;
-        }
-    
     }
+
+    .add-product__title {
+        font-size: 36px;
+        line-height: 36px;
+        color: $basic-dark;
+        margin-left: 8px;
+        margin-bottom: 80px;
+        background-color: $basic-white;
+        width: 379px;
+    }
+
+    .add-product__list {
+        width: 903px;
+    }
+
+
+    .add-product__item {
+        display: flex;
+        padding: 15px 0 17px 0;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 99%;
+            background-color: $grey;
+            position: absolute;
+            top: -1px;
+            left: 9px;
+        }
+
+        &:last-child::after {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 99%;
+            background-color: $grey;
+            position: absolute;
+            bottom: 1px;
+            left: 9px;
+        }
+    }
+
+    .add-product__heading {
+        font-size: 20px;
+        line-height: 20px;
+        color: $special-dark-two;
+        text-transform: uppercase;
+        width: 325px;
+        padding-left: 10px;
+    }
+
+    .add-product__wrapper-text {
+        display: flex;
+        justify-content: space-between;
+        width: 287px;
+        padding-top: 4px;
+    }
+
+    .add-product__descriptions {
+        font-family: $secondary-font;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .add-product__meaning--necessary{
+        margin-right: 10px;
+    }
+
+    .add-product__button {
+        color: $basic-white;
+        background-color: $basic-green;
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        padding: 10px;
+        width: 244px;
+        box-sizing: border-box;
+        margin-left: 40px;
+    }
+
+    .add-product__stock {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        box-sizing: border-box;
+        padding-bottom: 219px;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 245px;
+            height: 288px;
+            left: 0;
+            background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../images/add-product-stock/cat-bag.png" 1x, "../images/add-product-stock/cat-bag@2x.png" 2x);
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 78px;
+            height: 80px;
+            top: 56px;
+            left: 53%;
+            background-image: url("../../images/add-product-stock/gift.svg");
+            background-repeat: no-repeat;
+        }
+    }
+
+    .add-product__stock-descriptions {
+        font-family: $secondary-font;
+        font-size: 16px;
+        line-height: 20px;
+        color: $basic-white;
+        display: block;
+        position: relative;
+        top: 184px;
+        left: 43px;
+        width: 162px;
+    }
+
+    .add-product__wrapper-elements {
+        display: flex;
+        column-gap: 80px;
+    }
+
+}

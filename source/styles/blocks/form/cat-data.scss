@@ -6,7 +6,7 @@
 
     .cat-data__item {
         &:not(:last-child) {
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
     }
 
@@ -15,26 +15,28 @@
         line-height: 18px;
         color: $special-dark;
         text-transform: uppercase;
-        margin-right: 13px;
+        margin-right: 11px;
     }
 
     .cat-data__name-form {
         padding: 14px 0 13px 15px;
         font-size: 16px;
+        line-height: 18px;
         color: $special-dark;
         text-transform: uppercase;
         border: 1px solid $input-border;
+        font-family: $primary-font;
 
         &--nickname {
-            width: 197px;
+            width: 211px;
         }
 
         &--wt {
-            width: 167px;
+            width: 189px;
         }
 
         &--age {
-            width: 120px;
+            width: 156px;
             margin-bottom: 24px;
         }
 
@@ -60,35 +62,40 @@
 
     .cat-data__item {
         &:not(:last-child) {
-            margin-bottom: 14px;
+            margin-bottom: 21px;
         }
     }
 
     .cat-data__name {
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 20px;
+        line-height: 30px;
         color: $special-dark;
         text-transform: uppercase;
-        margin-right: 13px;
+        margin-right: 10px;
     }
 
     .cat-data__name-form {
         padding: 14px 0 13px 15px;
-        font-size: 16px;
+        font-size: 20px;
+        line-height: 30px;
+        font-family: $primary-font;
         color: $special-dark;
         text-transform: uppercase;
         border: 1px solid $input-border;
 
         &--nickname {
             width: 547px;
+            padding: 13px 0 8px 19px;
         }
 
         &--wt {
-            width: 518px;
+            width: 519px;
+            padding: 9px 0 10px 19px;
         }
 
         &--age {
-            width: 471px;
+            width: 477px;
+            padding: 10px 0 11px 20px;
             margin-bottom: 72px;
         }
 
@@ -111,39 +118,45 @@
 /* Desktop */
 
 @include desktop {
-    .cat-data__item {
-        width: 700px;
 
+    .cat-data{
+        margin-left: 8px;
+        margin-right: 80px;
+    }
+
+    .cat-data__item {
         &:not(:last-child) {
-            margin-bottom: 14px;
+            margin-bottom: 20px;
         }
     }
 
     .cat-data__name {
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 20px;
+        line-height: 29px;
         color: $special-dark;
         text-transform: uppercase;
-        margin-right: 13px;
+        margin-right: 11px;
     }
 
     .cat-data__name-form {
-        padding: 14px 0 13px 15px;
-        font-size: 16px;
+        padding:11px 0 11px 19px;
+        font-size: 20px;
+        line-height: 29px;
+        font-family: $primary-font;
         color: $special-dark;
         text-transform: uppercase;
         border: 1px solid $input-border;
 
         &--nickname {
-            width: 547px;
+            width: 489px;
         }
 
         &--wt {
-            width: 518px;
+            width: 461px;
         }
 
         &--age {
-            width: 471px;
+            width: 420px;
             margin-bottom: 72px;
         }
 

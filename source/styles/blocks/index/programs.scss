@@ -4,19 +4,20 @@
     }
 
     .programs__wrapper {
-        @include container-styles;
+        width: 320px;
+        margin: 0 auto;
     }
 
     .programs__list {
-        margin: 0;
+        @include container-styles;
         padding: 0;
         list-style-type: none;
     }
 
     .programs__item {
         background-color: #F2F2F2;
-        margin-bottom: 20px;
-        padding: 30px 33px 18px 22px;
+        margin-bottom: 21px;
+        padding: 30px 33px 20px 22px;
         position: relative;
     }
 
@@ -42,12 +43,13 @@
             display: block;
             background-repeat: no-repeat;
             background-image: url("../../images/programs/panter-mobile.svg");
-            top: 20px;
+            top: 24px;
+            left: 13px;
         }
     }
 
     .programs__title {
-        font-size: 18px;
+        font-size: 23px;
         line-height: 37px;
         color: $basic-dark;
         text-transform: uppercase;
@@ -57,7 +59,9 @@
 
     .programs__description {
         font-family: $secondary-font;
-        margin-bottom: 38px;
+        margin-bottom: 42px;
+        font-size: 13px;
+        letter-spacing: 0.4px;
         position: relative;
         color: $special-dark;
 
@@ -93,7 +97,7 @@
             display: inline-block;
             background-repeat: no-repeat;
             background-image: url("../../images/programs/arrow.svg");
-            top: 3px;
+            top: 6px;
             margin-left: 15px;
         }
     }
@@ -102,6 +106,10 @@
 /* Table */
 
 @include table {
+
+    .programs{
+        margin-bottom: 46px
+    }
 
     .programs__wrapper {
         @include container-styles-tablet;
@@ -115,13 +123,13 @@
 
     .programs__item {
         background-color: #F2F2F2;
-        margin-bottom: 45px;
+        margin-bottom: 36px;
         position: relative;
     }
 
     .programs__item-wrapper {
         width: 340px;
-        padding: 86px 316px 62px 52px;
+        padding: 74px 316px 57px 52px;
     }
 
     .programs__item--cat {
@@ -134,8 +142,8 @@
             background-repeat: no-repeat;
             background-image: url("../../images/programs/cat.svg");
             background-size: contain;
-            top: 24%;
-            left: 65%;
+            top: 21%;
+            left: 63%;
         }
     }
 
@@ -149,8 +157,8 @@
             background-repeat: no-repeat;
             background-image: url("../../images/programs/panter.svg");
             background-size: contain;
-            top: 28%;
-            left: 59%;
+            top: 24%;
+            left: 58%;
         }
     }
 
@@ -158,7 +166,7 @@
         line-height: 37px;
         color: $basic-dark;
         text-transform: uppercase;
-        font-size: 30px;
+        font-size: 36px;
         line-height: 36px;
         margin-bottom: 24px;
     }
@@ -169,7 +177,7 @@
         line-height: 24px;
         position: relative;
         color: $special-dark;
-        margin-bottom: 48px;
+        margin-bottom: 59px;
     }
 
     .programs__link-place {
@@ -193,8 +201,8 @@
             display: inline-block;
             background-repeat: no-repeat;
             background-image: url("../../images/programs/arrow.svg");
-            top: 3px;
-            margin-left: 25px;
+            top: 7px;
+            margin-left: 29px;
         }
     }
 }
@@ -212,15 +220,22 @@
         padding: 0;
         list-style-type: none;
         display: flex;
-        justify-content: space-between;
+        column-gap: 80px;
     }
 
     .programs__item {
         background-color: #F2F2F2;
         margin-bottom: 71px;
-        padding: 86px 81px 65px;
+        width: 570px;
+        padding: 77px 60px 59px 0;
         position: relative;
+
+
+        &--position{
+            margin-left: 8px;
+        }
     }
+
 
     .programs__item--cat {
         &::before {
@@ -233,7 +248,7 @@
             background-repeat: no-repeat;
             background-image: url("../../images/programs/cat.svg");
             top: 11%;
-            left: 15%;
+            left: 9%;
         }
     }
 
@@ -247,27 +262,27 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-image: url("../../images/programs/panter.svg");
-            top: 13%;
-            left: 11%;
+            top: 12%;
+            left: 6%;
         }
     }
 
     .programs__title {
-        font-size: 27px;
-        line-height: 37px;
+        font-size: 36px;
+        line-height: 36px;
         color: $basic-dark;
         text-transform: uppercase;
         margin-bottom: 73px;
-        text-align: center;
-        margin-left: 77px;
+        margin-left: 216px;
     }
 
     .programs__description {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 24px;
         font-family: $secondary-font;
-        width: 408px;
-        margin-bottom: 23px;
+        width: 457px;
+        margin-left: 53px;
+        margin-bottom: 26px;
         position: relative;
         color: $basic-dark;
     }
@@ -279,11 +294,13 @@
     }
 
     .programs__link-catalog {
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 30px;
         color: $basic-dark;
         text-transform: uppercase;
         text-decoration: none;
         position: relative;
+        margin-left: 53px;
 
         &::after {
             content: "";
@@ -293,8 +310,8 @@
             display: inline-block;
             background-repeat: no-repeat;
             background-image: url("../../images/programs/arrow.svg");
-            top: 3px;
-            margin-left: 15px;
+            top: 9px;
+            margin-left: 26px;
         }
     }
 }

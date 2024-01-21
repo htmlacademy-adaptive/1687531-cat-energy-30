@@ -10,7 +10,6 @@
     flex-direction: column;
     align-items: center;
     row-gap: 34px;
-
   }
 
   .arguments__list {
@@ -28,14 +27,13 @@
     border: 1px solid $grey;
     border-radius: 3px;
     box-sizing: border-box;
-
-
   }
 
   .arguments__value {
     font-size: 24px;
     line-height: 24px;
-
+    font-family: $primary-font;
+    padding-top: 1px;
   }
 
   .arguments__description {
@@ -60,7 +58,7 @@
     margin: 0;
     display: flex;
     line-height: 20px;
-
+    column-gap: 4px;
   }
 }
 
@@ -89,26 +87,27 @@
   }
 
   .arguments__item {
-    padding: 13px 0 17px;
+    padding: 17px;
     position: relative;
     border: 1px solid $grey;
     border-radius: 3px;
     box-sizing: border-box;
-
-
+    width: 163px;
   }
 
   .arguments__value {
-    font-size: 23px;
+    font-family: $primary-font;
+    font-size: 30px;
     line-height: 37px;
 
   }
 
   .arguments__description {
     margin: 0;
+    padding-top: 2px;
     font-family: $secondary-font;
     color: $special-dark;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
     text-transform: lowercase;
     width: 98px;
@@ -118,10 +117,11 @@
     left: 50%;
     transform: translateX(-50%);
     background-color: $basic-white;
+    width: 115px;
 
 
     &--time {
-      width: 119px;
+      width: 140px;
     }
 
   }
@@ -131,9 +131,19 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 20px;
+  }
 
+  .arguments__resume span{
+
+    &:not(:last-child){
+      padding-bottom: 2px;
+    }
+    
+    &:not(:first-child){
+      padding-top: 6px;
+    }
   }
 }
 
@@ -143,6 +153,7 @@
   .arguments {
     text-align: center;
     text-transform: uppercase;
+    margin-left: 9px;
   }
 
   .arguments__wrapper {
@@ -154,15 +165,15 @@
 
   .arguments__list {
     margin: 0;
-    width: 324px;
+    width: 365px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 43px;
-
   }
 
   .arguments__item {
-    padding: 13px 0 17px;
+    padding: 11px 0 17px;
+    height: 68px;
     position: relative;
     border: 1px solid $grey;
     border-radius: 3px;
@@ -170,16 +181,16 @@
   }
 
   .arguments__value {
-    font-size: 23px;
+    font-size: 30px;
     line-height: 37px;
-
+    font-family: $primary-font;
   }
 
   .arguments__description {
     margin: 0;
     font-family: $secondary-font;
     color: $special-dark;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
     text-transform: lowercase;
     width: 98px;
@@ -189,22 +200,23 @@
     left: 50%;
     transform: translateX(-50%);
     background-color: $white-grey;
+    width: 114px;
 
 
     &--time {
-      width: 119px;
+      width: 140px;
     }
 
   }
 
   .arguments__resume {
     margin: 0;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 20px;
+    margin-top: 6px;
 
     > span:not([class]):not(:last-child) {
-      letter-spacing: -0.5px;
-      margin-right: 44px;
+      margin-right: 60px;
     }
   }
 }

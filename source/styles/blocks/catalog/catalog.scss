@@ -1,7 +1,7 @@
 @include phone {
 
     .catalog__title {
-        font-size: 28px;
+        font-size: 36px;
         line-height: 36px;
         padding: 27px 42px 41px 20px;
         @include container-styles;
@@ -23,9 +23,9 @@
     }
 
     .catalog__title {
-        font-size: 46px;
-        line-height: 36px;
-        padding: 65px 0 149px;
+        font-size: 60px;
+        line-height: 60px;
+        padding: 65px 0 162px;
         text-align: left;
 
     }
@@ -62,9 +62,10 @@
     }
 
     .catalog__title {
-        font-size: 46px;
-        line-height: 36px;
-        padding: 65px 0 149px;
+        font-size: 60px;
+        line-height: 60px;
+        padding: 16px 0 165px;
+        margin-left: 8px;
         text-align: left;
 
     }
@@ -74,7 +75,9 @@
         flex-direction: row;
         flex-wrap: wrap;
         column-gap: 80px;
-        row-gap: 141px;
+        row-gap: 144px;
+        width: 1228px;
+        margin-left: 8px;
     }
 
     .catalog__product-card-wrapper {

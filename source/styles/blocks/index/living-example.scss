@@ -16,7 +16,7 @@
 }
 
 .living-example__container {
-    padding:25px 0;
+    padding: 11px 0 33px;
 
 }
 
@@ -28,7 +28,7 @@
     font-weight: 400;
     margin: 0;
     margin-bottom: 40px;
-    font-size: 28px;
+    font-size: 36px;
     line-height: 40px;
 
 }
@@ -44,13 +44,13 @@
 .live-example__thumb{
     display: inline-block;
     position: absolute;
-    right: 50%;
-    bottom: 5%;
+    right: 49%;
+    bottom: 6%;
     width: 4px;
-    height: 255px;
+    height: 257px;
     padding: 0;
     border: 0;
-    background-color: $thumb-default;
+    background-color: #666;
     border-radius: 2px;
 
     &:hover{
@@ -70,7 +70,7 @@
         background-repeat: no-repeat;
         background-image: url("../../images/slider/thumb-default.svg");
         bottom: 43%;
-        left: -18px;
+        left: -19px;
     }
 
     &:hover::after{
@@ -102,7 +102,7 @@
         font-weight: 400;
         margin: 0;
         margin-bottom: 60px;
-        font-size: 49px;
+        font-size: 60px;
         line-height: 60px;
     
     }
@@ -111,7 +111,7 @@
         font-family: $secondary-font;
         margin: 0;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 24px;
         margin-bottom: 55px;
         color: $special-dark;
     
@@ -120,8 +120,93 @@
     .live-example__thumb{
         display: inline-block;
         position: absolute;
-        right: 50%;
-        bottom: 9%;
+        right: 49.8%;
+        bottom: 10%;
+        width: 4px;
+        height: 510px;
+        padding: 0;
+        border: 0;
+        background-color: $thumb-default;
+        border-radius: 2px;
+    
+        &:hover{
+            background-color: $basic-green;
+        }
+    
+        &:active{
+            background-color: $thumb-active;
+        }
+    
+        &::after{
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-image: url("../../images/slider/thumb-default.svg");
+            bottom: 46%;
+            left: -18px;
+        }
+    
+        &:hover::after{
+            background-image: url("../../images/slider/thumb-hover.svg");
+          }
+    
+        &:active::after{
+            background-image: url("../../images/slider/thumb-active.svg");
+          }
+        }
+}
+
+/* Desktop */
+
+@include desktop{
+
+    .living-example {
+        position: relative;
+        background-color: $basic-white;
+        width: 100%;
+        background: linear-gradient($basic-white 24%,$white-grey 2%);
+        padding-bottom: 75px;
+    }
+
+    .living-example__container{
+        display: flex;
+        justify-content: space-between;
+        @include container-styles-desktop;
+        position: relative;
+    }
+    
+    .living-example__wrapper {
+        width: 437px;
+    }
+    
+    .living-example__title {
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 145px;
+        font-size: 60px;
+        line-height: 60px;
+        margin-left: 9px;
+    }
+    
+    .living-example__description {
+        font-family: $secondary-font;
+        margin: 0;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 73px;
+        color: $special-dark;
+        margin-left: 9px;
+        width: 432px;
+    }
+
+    .live-example__thumb{
+        display: inline-block;
+        position: absolute;
+        right: 22%;
+        bottom: 2%;
         width: 4px;
         height: 512px;
         padding: 0;
@@ -145,91 +230,8 @@
             display: inline-block;
             background-repeat: no-repeat;
             background-image: url("../../images/slider/thumb-default.svg");
-            bottom: 43%;
-            left: -18px;
-        }
-    
-        &:hover::after{
-            background-image: url("../../images/slider/thumb-hover.svg");
-          }
-    
-        &:active::after{
-            background-image: url("../../images/slider/thumb-active.svg");
-          }
-        }
-}
-
-/* Desktop */
-
-@include desktop{
-
-    .living-example {
-        position: relative;
-        background-color: $basic-white;
-        width: 100%;
-        background: linear-gradient($basic-white 20%,$white-grey 2%);
-    }
-
-    .living-example__container{
-        display: flex;
-        justify-content: space-between;
-        @include container-styles-desktop;
-        position: relative;
-    }
-    
-    .living-example__wrapper {
-        width: 437px;
-    }
-    
-    .living-example__title {
-        font-weight: 400;
-        margin: 0;
-        margin-bottom: 60px;
-        font-size: 49px;
-        line-height: 60px;
-    
-    }
-    
-    .living-example__description {
-        font-family: $secondary-font;
-        margin: 0;
-        font-size: 16px;
-        line-height: 20px;
-        margin-bottom: 55px;
-        color: $special-dark;
-    
-    }
-
-    .live-example__thumb{
-        display: inline-block;
-        position: absolute;
-        right: 25.6%;
-        bottom: 19%;
-        width: 4px;
-        height: 387px;
-        padding: 0;
-        border: 0;
-        background-color: $thumb-default;
-        border-radius: 2px;
-    
-        &:hover{
-            background-color: $basic-green;
-        }
-    
-        &:active{
-            background-color: $thumb-active;
-        }
-    
-        &::after{
-            content: "";
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            display: inline-block;
-            background-repeat: no-repeat;
-            background-image: url("../../images/slider/thumb-default.svg");
-            bottom: 43%;
-            left: -18px;
+            bottom: 46%;
+            left: -19px;
         }
     
         &:hover::after{

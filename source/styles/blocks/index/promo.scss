@@ -26,9 +26,9 @@
     }
 
     .promo__title {
-        padding-top: 27px;
-        margin-bottom: 25px;
-        font-size: 32px;
+        padding-top: 26px;
+        margin-bottom: 23px;
+        font-size: 36px;
         line-height: 36px;
         font-weight: 400;
         color: $basic-white;
@@ -42,6 +42,10 @@
         text-transform: uppercase;
     }
 
+    .promo__img{
+        margin-bottom: 2px;
+    }
+
     .promo__button {
         width: 100%;
         height: 40px;
@@ -49,9 +53,11 @@
         background-color: $basic-green;
         color: $basic-white;
         border: none;
-        font-size: 16px;
+        font-size: 13px;
         line-height: 20px;
+        letter-spacing: -0.5px;
     }
+
 }
 
 /* Table */
@@ -63,12 +69,12 @@
     }
 
     .promo__title {
-        width: 414px;
+        width: 416px;
         margin-left: 90px;
-        font-size: 43px;
-        line-height: 58px;
+        font-size: 60px;
+        line-height: 60px;
         margin-bottom: 40px;
-        margin-top: 60px;
+        margin-top: 62px;
 
     }
 
@@ -76,7 +82,7 @@
         width: 400px;
         margin-left: 90px;
         margin-bottom: 21px;
-        font-size: 14px;
+        font-size: 20px;
         line-height: 20px;
         color: $basic-dark;
         text-transform: uppercase;
@@ -91,10 +97,12 @@
         background-color: #68b738;
         color: #fff;
         border: 0;
-        font-size: 16px;
-        top: 27%;
-        left: 13%;
-        font-size: 16px;
+        top: 230px;
+        left: 89px;
+        font-family: Oswald;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
         text-transform: uppercase;
     }
 
@@ -104,7 +112,7 @@
 
 @include desktop {
     .promo {
-        margin-bottom: 380px;
+        margin-bottom: 266px;
     }
 
     .promo__wrapper {
@@ -117,7 +125,7 @@
             position: absolute;
             width: 100%;
             height: 694px;
-            left: 50%;
+            left: 50.6%;
             top: 0;
             background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../images/promo/cat-desktop.png" 1x, "../images/promo/cat-desktop@2x.png" 2x);
             background-repeat: no-repeat;
@@ -126,21 +134,21 @@
     }
 
     .promo__title {
-        width: 414px;
+        width: 420px;
         text-align: left;
-        margin-left: 90px;
-        font-size: 43px;
-        line-height: 58px;
+        margin-left: 88px;
+        font-size: 60px;
+        line-height: 60px;
         margin-bottom: 40px;
-        margin-top: 60px;
+        margin-top: 52px;
         position: relative;
     }
 
     .promo__description {
         width: 400px;
-        margin-left: 90px;
-        margin-bottom: 21px;
-        font-size: 14px;
+        margin-left: 89px;
+        margin-bottom: 53px;
+        font-size: 20px;
         line-height: 20px;
         color: $basic-dark;
         text-transform: uppercase;
@@ -154,8 +162,12 @@
 
     .promo__img {
         position: absolute;
-        left: 36.9%;
-        top: -33%;
+        left: 37.3%;
+        top: -28%;
+    }
+
+    .promo__button-link{
+        margin-left: 89px;
     }
 
     .promo__button {
@@ -164,10 +176,13 @@
         background-color: #68b738;
         color: #fff;
         border: 0;
-        font-size: 16px;
-        font-size: 16px;
+        font-family: $primary-font;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;     
         text-transform: uppercase;
-        margin-left: 90px;
     }
 
 }

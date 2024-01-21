@@ -55,12 +55,12 @@
     bottom: 12px;
 
     &--big{
-        width: 171px;
+        width: 139px;
         transform: translate(-100%, 0);
     }
 
     &--small{
-        width: 186px;
+        width: 143px;
     }
 }
 }
@@ -70,7 +70,8 @@
 @include table{
     .slider {
         position: relative;
-        margin-top: 27px;
+        margin-top: 45px;
+        padding-bottom: 7px;
         background-color:  $special-grey;
     }
     
@@ -124,12 +125,14 @@
         margin-bottom: 86px;
     
         &--big{
-            width: 300px;
+            width: 278px;
+            height: 509px;
             transform: translate(-100%, 0);
         }
     
         &--small{
-            width: 286px;
+            width: 278px;
+            height: 509px;
         }
     }
 }
@@ -188,17 +191,17 @@
         margin-bottom: 86px;
     
         &--big{
-            width: 300px;
-            bottom: 2%;
-            transform: translate(-205%,0);
-            height: 383px;
+            width: 283px;
+            bottom: -25%;
+            transform: translate(-195%,0);
+            height: 513px;
         }
     
         &--small{
-            width: 286px;
-            bottom: 2%;
-            right: 30px;
-            height: 379px;
+            width: 283px;
+            bottom: -24%;
+            right: -12px;
+            height: 507px;
         }
     }
 

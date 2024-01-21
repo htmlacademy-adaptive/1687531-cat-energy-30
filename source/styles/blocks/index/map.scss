@@ -1,19 +1,32 @@
-@include phone{
-.map__google-map {
+@include phone {
+  .map__google-map {
     display: block;
     border: none;
     width: 100%;
     min-height: 362px;
   }
+
+  .map {
+    height: 362px;
+  }
 }
 
-.map__google-map{
-  margin: 0;
-  width: 100%;
-  min-height: 400px;
-  border: 0;
+@include table {
+
+  .map__google-map {
+    margin: 0;
+    width: 100%;
+    min-height: 400px;
+    border: 0;
+  }
 }
 
-.map{
-  height: 400px;
+@include desktop {
+  .map__google-map {
+    margin: 0;
+    width: 100%;
+    min-height: 400px;
+    border: 0;
+  }
+
 }
