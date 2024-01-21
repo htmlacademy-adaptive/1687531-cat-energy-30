@@ -1,0 +1,11 @@
+.page__body-wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@include desktop {
+    .page__body-wrapper{
+    position: relative;
+    z-index: 1;
+    }
+}

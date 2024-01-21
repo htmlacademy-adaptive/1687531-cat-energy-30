@@ -1,0 +1,40 @@
+@include phone {
+    .footer {
+        box-sizing: border-box;
+        background-color: $white-grey;
+        margin: 0 auto;
+    }
+
+    .footer__wrapper {
+        @include container-styles;
+        padding: 38px 0 40px;
+    }
+}
+
+/* Table */
+
+@include table {
+    .footer {
+        box-sizing: border-box;
+        background-color: $white-grey;
+    }
+
+    .footer__wrapper {
+        @include container-styles-tablet;
+        padding: 49px 0;
+    }
+}
+
+/* Desktop */
+
+@include desktop{
+    .footer {
+        box-sizing: border-box;
+        background-color: $white-grey;
+    }
+
+    .footer__wrapper {
+        @include container-styles-desktop;
+        padding: 63px 0;
+    }
+}

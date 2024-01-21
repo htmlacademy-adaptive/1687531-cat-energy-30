@@ -1,0 +1,133 @@
+@include phone {
+    .header {
+        width: 320px;
+        background-color: $basic-white;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .header__wrapper {
+        width: 280px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_wrapper-pic {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__logo {
+        margin-right: 56px;
+
+        &:hover{
+            opacity: 80%;
+        }
+
+        &:active{
+            opacity: 60%;
+        }
+    }
+
+    .header__cat-energy{
+        &:active{
+            opacity: 30%;
+        }
+    }
+
+}
+
+/* Table */
+
+@include table {
+
+    .header {
+        background-color: $basic-white;
+        box-sizing: border-box;
+        padding-top: 25px;
+    }
+
+    .header__wrapper {
+        @include container-styles-tablet;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_wrapper-pic {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__logo {
+        margin-right: 13px;
+
+        &:hover{
+            opacity: 80%;
+        }
+
+        &:active{
+            opacity: 60%;
+        }
+    }
+
+    .header__cat-energy{
+        &:active{
+            opacity: 30%;
+        }
+    }
+
+}
+
+/* Desktop */
+
+@include desktop{
+    .header {
+        box-sizing: border-box;
+        padding-top: 55px;
+        padding-bottom: 55px;
+
+        &--index{
+            background-color: transparent;
+        }
+    }
+
+    .header__wrapper {
+        width: 1235px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_wrapper-pic {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__logo {
+        margin-right: 15px;
+        margin-left: 15px;
+
+        &:hover{
+            opacity: 80%;
+        }
+
+        &:active{
+            opacity: 60%;
+        }
+    }
+
+    .header__cat-energy{
+        width: 117px;
+        height: 22px;
+
+        &:active{
+            opacity: 30%;
+        }
+    }
+
+}

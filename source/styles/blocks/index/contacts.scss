@@ -1,0 +1,121 @@
+@include phone{
+    .contacts{
+        background-color: $white-grey;
+
+        &--index{
+            background-color: $basic-white;
+        }
+    }
+
+    .contacts__wrapper{
+        @include container-styles;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-height: 114px;
+    }
+
+    .contacts__description{
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color:$dark;
+        font-weight: bold;
+        width: 180px;
+    }
+
+    .contacts__space{
+        display: none;
+    }
+
+    .contacts__address{
+        font-family: $secondary-font;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        color: #444;
+        width: 175px;
+    }
+}
+
+/* Table */
+
+@include table{
+    .contacts{
+        background-color: $white-grey;
+        &--index{
+            background-color: $basic-white;
+        }
+    }
+
+    .contacts__wrapper{
+        width: 629px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 60px 0;
+        justify-content: space-between;
+    }
+
+    .contacts__description{
+        font-size: 20px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color:$dark;
+        font-weight: bold;
+        width: 180px;
+    }
+
+    .contacts__address{
+        font-family: $secondary-font;
+        font-size: 16px;
+        line-height: 20px;
+        color:$special-dark;
+        width: 174px;
+        text-align: right;
+    }
+}
+
+/* Desktop */
+
+@include desktop{
+    .contacts{
+        width: 565px;
+        margin: 0 auto;
+        position: absolute;
+        top: 95px;
+        left: 110px;
+    }
+
+    .contacts__wrapper{
+        width: 565px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 60px 0;
+        justify-content: space-evenly;
+        background-color: $basic-white;
+    }
+
+    .contacts__description{
+        font-size: 20px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color:$dark;
+        font-weight: bold;
+        width: 180px;
+        padding-left: 17px;
+    }
+
+    .contacts__address{
+        font-family: $secondary-font;
+        font-size: 16px;
+        line-height: 20px;
+        color:$special-dark;
+        width: 174px;
+        text-align: left;
+        padding-left: 8px;
+    }
+}

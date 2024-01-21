@@ -1,0 +1,106 @@
+@include phone {
+
+    .questionnaire {
+        margin-bottom: 31px;
+    }
+
+    .questionnaire__send {
+        @include container-styles;
+        text-align: center;
+    }
+
+    .questionnaire__send-form {
+        width: 100%;
+        margin-bottom: 21px;
+        padding: 10px 56px;
+        font-family: $primary-font;
+        background-color: $basic-green;
+        border: none;
+        color: $basic-white;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+
+    .questionnaire__required-form {
+        font-family: $secondary-font;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+/* Table */
+
+@include table {
+
+    .questionnaire {
+        margin-bottom: 60px;
+    }
+
+    .questionnaire__send {
+        display: flex;
+        align-items: center;
+    }
+
+    .questionnaire__send-form {
+        width: 284px;
+        padding: 14px 56px;
+        background-color: $basic-green;
+        border: none;
+        color: $basic-white;
+        font-size: 20px;
+        line-height: 26px;
+        font-family: $primary-font;
+        text-transform: uppercase;
+        margin-right: 58px;
+    }
+
+    .questionnaire__required-form {
+        font-family: $secondary-font;
+        font-size: 16px;
+        line-height: 16px;
+        padding-bottom: 6px;
+    }
+}
+
+
+/* Desktop */
+
+@include desktop{
+    .questionnaire {
+        margin-bottom: 79px;
+    }
+
+    .questionnaire__wrapper-index{
+        @include container-styles-desktop;
+        width: 1230px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .questionnaire__send {
+        display: flex;
+        align-items: center;
+        margin-left: 8px;
+    }
+
+    .questionnaire__send-form {
+        width: 570px;
+        padding: 14px 56px;
+        background-color: $basic-green;
+        border: none;
+        color: $basic-white;
+        font-size: 20px;
+        line-height: 26px;
+        font-family: $primary-font;
+        text-transform: uppercase;
+        margin-right: 77px;
+    }
+
+    .questionnaire__required-form {
+        font-family: $secondary-font;
+        font-size: 16px;
+        line-height: 16px;
+        padding-bottom: 4px;
+    }
+}

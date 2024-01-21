@@ -1,0 +1,387 @@
+@include phone {
+  $advantages-descriptions: one two three four;
+
+  .advantages {
+    margin: 0 auto;
+    width: 320px;
+    margin-bottom: 66px;
+  }
+
+  .advantages__wrapper {
+    @include container-styles;
+  }
+
+  .advantages__title {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+
+  .advantages__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .advantages__description {
+    font-family: $secondary-font;
+    font-size: 14px;
+    line-height: 18px;
+    color: $special-dark;
+    padding-left: 80px;
+    position: relative;
+
+    &--br{
+      display: none;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 26px;
+    }
+  }
+
+  @each $description in $advantages-descriptions {
+    .advantages__description--#{$description} {
+
+
+
+      &::before {
+        content: "";
+
+        @if $description ==one {
+          background-image: url('/images/advantages/one.svg');
+          display: block;
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          left: 0px;
+          top: -3px;
+          background-repeat: no-repeat;
+        }
+
+        @else if $description ==two {
+          background-image: url('/images/advantages/two.svg');
+          display: block;
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          left: 0px;
+          top: -3px;
+          background-repeat: no-repeat;
+        }
+
+        @else if $description ==three {
+          background-image: url('/images/advantages/three.svg');
+          display: block;
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          left: 0px;
+          top: -3px;
+          background-repeat: no-repeat;
+        }
+
+        @else if $description ==four {
+          background-image: url('/images/advantages/four.svg');
+          display: block;
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          left: 0px;
+          top: -3px;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
+
+/* Table  */
+
+@include table {
+
+  $advantages-descriptions: one two three four;
+
+  .advantages {
+    margin-bottom: 151px;
+  }
+
+  .advantages__wrapper {
+    @include container-styles-tablet;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .advantages__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 166px;
+    row-gap: 50px;
+  }
+
+  .advantages__description {
+    font-family: $secondary-font;
+    font-size: 16px;
+    line-height: 24px;
+    color: $special-dark;
+    position: relative;
+    padding-top: 184px;
+    z-index: 1;
+    width: 216px;
+    
+
+    &--two{
+      width: 240px;
+    }
+
+
+    &--three,
+    &--four{
+      padding-top: 193px;
+    }
+  
+    &--one::after,
+    &--two::after,
+    &--three::after,
+    &--four::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 112px;
+      height: 227px;
+      left: 55%;
+      background-repeat: no-repeat;
+      z-index: -1;
+      bottom: -16%;
+    }
+  
+    &--one::after {
+      left: 59%;
+      top: 28%;
+      background-image: url('../../images/advantages/number-one.png');
+    }
+  
+    &--two::after {
+      left: 52%;
+      top: 28%;
+      background-image: url('../../images/advantages/number-two.png');
+    }
+  
+    &--three::after {
+      left: 58%;
+      top: 30%;
+      height: 234px;
+      background-image: url('../../images/advantages/number-three.png');
+    }
+  
+    &--four{
+      width: 245px;
+    &::after {
+      left: 52%;
+      top: 31%;
+      width: 121px;
+      background-image: url('../../images/advantages/number-four.png');
+    }
+  }
+  }
+
+  @each $description in $advantages-descriptions {
+    .advantages__description--#{$description} {
+
+
+
+      &::before {
+        content: "";
+        background-color: $basic-green;
+        width: 80px;
+        height: 80px;
+        display: block;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: 26px 9vh;
+
+        @if $description ==one {
+          background-image: url('../../images/advantages/sheet.svg');
+          background-size: 25px 32px;
+          left: 1px;
+          bottom: 41%;
+        }
+
+        @else if $description ==two {
+          background-image: url('../../images/advantages/powder.svg');
+          background-size: 27px 29px;
+          left: 1px;
+          bottom: 41%;
+        }
+
+        @else if $description ==three {
+          background-image: url('../../images/advantages/eat.svg');
+          background-size: 28px 27px;
+          left: 1px;
+          bottom: 39%;
+        }
+
+        @else if $description ==four {
+          background-image: url('../../images/advantages/time.svg');
+          background-size: 30px 30px;
+          left: 1px;
+          bottom: 39%;
+        }
+      }
+
+    }
+  }
+
+}
+
+/* Desktop */
+
+@include desktop{
+  $advantages-descriptions: one two three four;
+
+  .advantages {
+    margin-bottom: 127px;
+  }
+
+  .advantages__wrapper {
+    @include container-styles-desktop;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 9px;
+  }
+
+  .advantages__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1229px;
+  }
+
+  .advantages__description {
+    font-family: $secondary-font;
+    font-size: 16px;
+    line-height: 24px;
+    color: $special-dark;
+    position: relative;
+    padding-top: 183px;
+    z-index: 1;
+    width: 216px;
+
+    &--one{
+      padding-left: 8px;
+    }
+  
+    &--two{
+      width: 240px;
+      padding-left: 23px;
+    }
+
+
+    &--three{
+      padding-top: 183px;
+      padding-right: 24px;
+    }
+
+    &--four{
+      width: 245px;
+      padding-top: 183px;
+    }
+  
+    &--one::after,
+    &--two::after,
+    &--three::after,
+    &--four::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 112px;
+      height: 227px;
+      left: 55%;
+      background-repeat: no-repeat;
+      z-index: -1;
+      bottom: -16%;
+    }
+  
+    &--one::after {
+      left: 60%;
+      top: 28%;
+      background-image: url('../../images/advantages/number-one.png');
+    }
+  
+    &--two::after {
+      left: 55%;
+      top: 28%;
+      background-image: url('../../images/advantages/number-two.png');
+    }
+  
+    &--three::after {
+      left: 52%;
+      top: 28%;
+      height: 234px;
+      background-image: url('../../images/advantages/number-three.png');
+    }
+  
+    &--four::after {
+      left: 50%;
+      top: 29%;
+      width: 121px;
+      background-image: url('../../images/advantages/number-four.png');
+    }
+  }
+
+  @each $description in $advantages-descriptions {
+    .advantages__description--#{$description} {
+
+
+
+      &::before {
+        content: "";
+        background-color: $basic-green;
+        width: 80px;
+        height: 80px;
+        display: block;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: 28px 7vh;
+        bottom: 40%;
+        background-size: 25px 33px;
+
+        @if $description ==one {
+          background-image: url('../../images/advantages/sheet.svg');;
+          left: 8px;
+        }
+
+        @else if $description ==two {
+          background-image: url('../../images/advantages/powder.svg');
+          left: 24px;
+        }
+
+        @else if $description ==three {
+          background-image: url('../../images/advantages/eat.svg');
+          left: 0;
+        }
+
+        @else if $description ==four {
+          background-image: url('../../images/advantages/time.svg');
+          left: -1px;
+        }
+      }
+
+    }
+  }
+
+}

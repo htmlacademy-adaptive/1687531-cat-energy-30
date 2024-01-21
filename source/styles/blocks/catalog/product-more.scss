@@ -1,0 +1,202 @@
+@include phone{
+
+.product-more{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 78px;
+    position: relative;
+
+    &::before, &::after{
+        content: "";
+        position: absolute;
+        background-color: $cross-grey;
+    }
+    &::before{
+        width: 2px;
+        height: 30px;
+        left: 50%;
+        top:24px;
+    }
+    &::after{
+        width: 2px;
+        height: 30px;
+        left: 50%;
+        transform: rotate(90deg);
+        top:24px;
+    }
+
+}
+
+.product-more__heading{
+    font-size: 16px;
+    line-height: 20px;
+    color: $dark;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.product-more__descriptions{
+    font-family: $secondary-font;
+    font-size: 12px;
+    line-height: 16px;
+    color: $special-dark;
+    margin-bottom: 21px;
+}
+
+.product-more__button{
+    display: block;
+    color:$special-dark;
+    background-color: $white-grey;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 280px;
+    box-sizing: border-box;
+}
+
+}
+
+/* Table */
+
+@include table{
+
+    .product-more{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 347px;
+        position: relative;
+        background-color: $basic-white;
+        border: 2px solid $white-grey;
+    
+        &::before, &::after{
+            content: "";
+            position: absolute;
+            background-color: $cross-grey;
+        }
+        &::before{
+            width: 2px;
+            height: 60px;
+            left: 50%;
+            top: 12%;
+        }
+        &::after{
+            width: 2px;
+            height: 60px;
+            left: 50%;
+            top: 12%;
+            transform: rotate(90deg);
+        }
+    
+    }
+    
+    .product-more__heading{
+        font-size: 20px;
+        line-height: 24px;
+        color: $dark;
+        text-transform: uppercase;
+        position: absolute;
+        width: 140px;
+        top:37%;
+        text-align: center;
+    }
+    
+    .product-more__descriptions{
+        font-family: $secondary-font;
+        font-size: 16px;
+        line-height: 18px;
+        color: $special-dark;
+        position: absolute;
+        top: 54%;
+        width: 167px;
+        text-align: center;
+    }
+    
+    .product-more__button{
+        display: block;
+        color:$special-dark;
+        background-color: $white-grey;
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        padding: 10px;
+        width: 250px;
+        box-sizing: border-box;
+    }
+    
+}
+
+
+/* Desktop */
+
+@include desktop{
+    .product-more{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 347px;
+        position: relative;
+        background-color: $basic-white;
+        border: 2px solid $white-grey;
+    
+        &::before, &::after{
+            content: "";
+            position: absolute;
+            background-color: $cross-grey;
+        }
+        &::before{
+            width: 2px;
+            height: 60px;
+            left: 50%;
+            top: 12%;
+        }
+        &::after{
+            width: 2px;
+            height: 60px;
+            left: 50%;
+            transform: rotate(90deg);
+            top:12%;
+        }
+    
+    }
+    
+    .product-more__heading{
+        font-size: 20px;
+        line-height: 24px;
+        color: $dark;
+        text-transform: uppercase;
+        position: absolute;
+        width: 140px;
+        top:35%;
+        text-align: center;
+    }
+    
+    .product-more__descriptions{
+        font-family: $secondary-font;
+        font-size: 16px;
+        line-height: 18px;
+        color: $special-dark;
+        position: absolute;
+        top: 52%;
+        width: 167px;
+        text-align: center;
+    }
+    
+    .product-more__button{
+        display: block;
+        color:$special-dark;
+        background-color: $white-grey;
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        padding: 10px;
+        width: 169px;
+        box-sizing: border-box;
+    }
+    
+}

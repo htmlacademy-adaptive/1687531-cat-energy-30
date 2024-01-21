@@ -1,0 +1,75 @@
+@include phone{
+.line::after {
+    content: "";
+    position: absolute;
+    top: 54%;
+    width: 300%;
+    height: 2px;
+    background-color: $basic-green;
+  }
+  
+  .line {
+    position: relative;
+  }
+}
+
+/* Table */
+
+@include table {
+
+  .line {
+    position: relative;
+
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -506%;
+        width: 500%;
+        height: 2px;
+        background-color: $basic-green;
+      }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 500%;
+      height: 2px;
+      background-color: $basic-green;
+    }
+
+
+    }
+  }
+
+  /* Desktop */
+
+  @include desktop{
+    .line {
+      position: relative;
+  
+  
+      &::before{
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: -503%;
+          width: 500%;
+          height: 2px;
+          background-color: $basic-green;
+        }
+  
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 500%;
+        height: 2px;
+        background-color: $basic-green;
+      }
+  
+  
+      }
+  }

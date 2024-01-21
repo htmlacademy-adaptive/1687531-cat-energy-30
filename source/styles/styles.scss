@@ -1,7 +1,50 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/global.scss";
+@import "./global/mixins.scss";
 @import "./global/fonts.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/page-body-wrapper.scss";
+@import "./global/button.scss";
+@import "./global/global.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+
+/* Index */
+
+@import "./blocks/index/header.scss";
+@import "./blocks/index/nav.scss";
+@import "./blocks/index/page-main.scss";
+@import "./blocks/index/promo.scss";
+@import "./blocks/index/programs.scss";
+@import "./blocks/index/advantages.scss";
+@import "./blocks/index/living-example.scss";
+@import "./blocks/index/arguments.scss";
+@import "./blocks/index/slider.scss";
+@import "./blocks/index/contacts.scss";
+@import "./blocks/index/map.scss";
+@import "./blocks/index/footer.scss";
+@import "./blocks/index/social.scss";
+@import "./blocks/index/copyright.scss";
+
+/* Catalog */
+
+@import "./blocks/catalog/inner-main.scss";
+@import "./blocks/catalog/catalog.scss";
+@import "./blocks/catalog/stripe.scss";
+@import "./blocks/catalog/product.scss";
+@import "./blocks/catalog/product-more.scss";
+@import "./blocks/catalog/add-product.scss";
+
+
+/* Form */
+
+@import "./blocks/form/main-container-form.scss";
+@import "./blocks/form/program-selection.scss";
+@import "./blocks/form/questionnaire.scss";
+@import "./blocks/form/cat-data.scss";
+@import "./blocks/form/purpose-program.scss";
+@import "./blocks/form/contact.scss";
+@import "./blocks/form/comment.scss";
+@import "./blocks/form/additionally.scss";
+@import "./blocks/form/line.scss";
+@import "./blocks/form/none.scss";

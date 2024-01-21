@@ -1,0 +1,225 @@
+@include phone {
+
+    .additionally {
+        margin-bottom: 34px;
+    }
+
+    .additionally__wrapper {
+        @include container-styles;
+        margin-bottom: 34px;
+    }
+
+    .additionally__buy-more {
+        display: inline-block;
+        padding-right: 20px;
+        font-size: 24px;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .additionally__list {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .additionally__item {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+
+    .additionally__label {
+        display: flex;
+        align-items: center;
+    }
+
+    .additionally__form {
+        margin: 0;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        appearance: none;
+        border: 1px solid $grey;
+        margin-right: 15px;
+
+        &:checked::before {
+            content: '';
+            position: absolute;
+            top: 22%;
+            left: 18%;
+            background-image: url("../../images/additionally/daw.svg");
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 24px;
+        }
+
+        &:hover{
+            border: 1px solid $hover-input-md;
+        }
+
+        &:disabled {
+            opacity: 30%;
+        }
+    }
+
+    .additionally__description {
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
+
+}
+
+/* Table */
+
+@include table {
+    .additionally {
+        margin-bottom: 52px;
+    }
+
+    .additionally__wrapper {
+        margin-bottom: 54px;
+    }
+
+    .additionally__buy-more {
+        display: inline-block;
+        padding-right: 41px;
+        font-size: 36px;
+        line-height: 36px;
+        text-align: left;
+    }
+
+    .additionally__list {
+        width: 565px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 32px;
+    }
+
+
+    .additionally__item {
+        width: 221px;
+    }
+
+    .additionally__label {
+        display: flex;
+        align-items: center;
+    }
+
+    .additionally__form {
+        margin: 0;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        appearance: none;
+        border: 1px solid $grey;
+        margin-right: 19px;
+
+        &:checked::before {
+            content: '';
+            position: absolute;
+            top: 24%;
+            left: 17%;
+            background-image: url("../../images/additionally/daw.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 26px;
+            height: 47px;
+        }
+
+        &:hover{
+            border: 1px solid $hover-input-md;
+        }
+
+        &:disabled {
+            opacity: 30%;
+        }
+    }
+
+    .additionally__description {
+        font-size: 20px;
+        line-height: 29px;
+        text-transform: uppercase;
+    }
+
+}
+
+/* Desktop */
+
+@include desktop {
+    .additionally {
+        margin-bottom: 60px;
+    }
+
+    .additionally__wrapper {
+        margin-bottom: 54px;
+    }
+
+    .additionally__buy-more {
+        display: inline-block;
+        padding-right: 41px;
+        font-size: 36px;
+        line-height: 36px;
+        text-align: left;
+        padding-left: 8px;
+    }
+
+    .additionally__list {
+        width: 1220px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 104px;
+        margin-left: 9px;
+    }
+
+
+    .additionally__item {
+        width: 221px;
+    }
+
+    .additionally__label {
+        display: flex;
+        align-items: center;
+    }
+
+    .additionally__form {
+        margin: 0;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        appearance: none;
+        border: 1px solid $grey;
+        margin-right: 19px;
+
+        &:checked::before {
+            content: '';
+            position: absolute;
+            top: 25%;
+            left: 18%;
+            background-image: url("../../images/additionally/daw.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 25px;
+            height: 23px;
+        }
+
+        &:hover{
+            border: 1px solid $hover-input-md;
+        }
+
+        &:disabled {
+            opacity: 30%;
+        }
+    }
+
+    .additionally__description {
+        font-size: 20px;
+        line-height: 29px;
+        text-transform: uppercase;
+    }
+
+}

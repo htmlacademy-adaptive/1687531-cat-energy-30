@@ -1,0 +1,267 @@
+@include phone{
+
+.contact{
+    margin-bottom:24px ;
+}
+
+.contact__wrapper {
+    @include container-styles;
+    padding-top: 25px;
+    margin-bottom: 35px;
+}
+
+.contact__title {
+    font-size: 24px;
+    line-height: 26px;
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.contact__list-wrapper {
+    @include container-styles;
+}
+
+.contact__item {
+    &:not(:last-child) {
+        margin-bottom: 13px;
+    }
+}
+
+.contact__label {
+    font-size: 16px;
+    line-height: 18px;
+    color: $special-dark;
+    margin-right: 11px;
+    text-transform: uppercase;
+}
+
+.contact__input {
+    padding: 13px 0 13px 14px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #444;
+    text-transform: uppercase;
+    position: relative;
+    border: 1px solid $grey;
+    font-family: $primary-font;
+
+    &--email {
+        width: 200px;
+        background-repeat: no-repeat;
+        background-position: right 11px center;
+        background-image: url("../../images/contact/mail.svg");
+
+        &:focus{
+            background-image: url("../../images/contact/email-focus.svg");
+        }
+
+        &:invalid{
+            background-image: url("../../images/contact/email-error.svg");
+        }
+    }
+
+
+    &--phone {
+        width: 183px;
+        background-image: url("../../images/contact/phone.svg");
+        background-repeat: no-repeat;
+        background-position: right 13px center;
+
+    }
+
+    &:hover{
+        outline: 2px solid $grey;
+    }
+
+    &:focus {
+        outline: 2px solid $special-dark;
+    }
+
+    &:invalid{
+        outline: 2px solid $status-error;
+    }
+
+    
+}
+
+}
+
+/* Table */
+
+@include table{
+    .contact{
+        margin-bottom:68px ;
+    }
+    
+    .contact__wrapper {
+        margin-bottom: 73px;
+    }
+    
+    .contact__title {
+        width: 552px;
+        font-size: 36px;
+        line-height: 36px;
+        display: inline-block;
+    }
+
+    .contact__item {
+        &:not(:last-child) {
+            margin-bottom: 21px;
+        }
+    }
+    
+    .contact__label {
+        font-size: 20px;
+        line-height: 30px;
+        color: $special-dark;
+        margin-right: 11px;
+        text-transform: uppercase;
+    }
+    
+    .contact__input {
+        padding: 10px 0 11px 18px;
+        font-size: 20px;
+        line-height: 29px;
+        font-family: $primary-font;
+        color: #444;
+        text-transform: uppercase;
+        position: relative;
+        border: 1px solid $grey;
+    
+        &--email {
+            width: 532px;
+            background-size: 18px 13px;
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+            background-image: url("../../images/contact/mail.svg");
+
+        &:focus{
+            background-image: url("../../images/contact/email-focus.svg");
+        }
+
+        &:invalid{
+            background-image: url("../../images/contact/email-error.svg");
+        }
+        }
+    
+    
+        &--phone {
+            width: 511px;
+            background-image: url("../../images/contact/phone.svg");
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+        }
+
+        &:hover{
+            outline: 2px solid $grey;
+        }
+
+        &:focus {
+            outline: 2px solid $special-dark;
+        }
+
+        &:invalid{
+            outline: 2px solid $status-error;
+        }
+     
+    }
+}
+
+/* Desktop */
+
+@include desktop{
+    .contact{
+        margin-bottom:24px ;
+    }
+    
+    .contact__wrapper {
+        margin-bottom: 72px;
+    }
+    
+    .contact__title {
+        width: 536px;
+        font-size: 36px;
+        line-height: 36px;
+        display: inline-block;
+        padding-right: 25px;
+        padding-left: 8px;
+    }
+    
+    .contact__list-wrapper{
+        margin-bottom: 58px;
+    }
+
+    .contact__list{
+        display: flex;
+        column-gap: 53px;
+        width: 1230px;
+    }
+
+    .contact__item {
+        &:not(:last-child) {
+            margin-bottom: 14px;
+        }
+    }
+    
+    .contact__label {
+        font-size: 20px;
+        line-height: 29px;
+        color: $special-dark;
+        margin-right: 11px;
+        text-transform: uppercase;
+        padding-left: 8px;
+
+        &--phone{
+            margin-right: 11px;
+            padding-left: 28px;
+        }
+    }
+    
+    .contact__input {
+        padding: 11px 0 11px 20px;
+        font-size: 20px;
+        line-height: 29px;
+        font-family: $primary-font;
+        color: #444;
+        text-transform: uppercase;
+        position: relative;
+        border: 1px solid $grey;
+    
+        &--email {
+            width: 472px;
+            background-size: 22px 13px;
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+            background-image: url("../../images/contact/mail.svg");
+
+            &:focus{
+                background-image: url("../../images/contact/email-focus.svg");
+            }
+    
+            &:invalid{
+                background-image: url("../../images/contact/email-error.svg");
+            }
+        }
+    
+    
+        &--phone {
+            width: 450px;
+            background-image: url("../../images/contact/phone.svg");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+        }
+
+        &:hover{
+            outline: 2px solid $grey;
+        }
+
+        &:focus {
+            outline: 2px solid $special-dark;
+        }
+
+        &:invalid{
+            outline: 2px solid $status-error;
+        }
+        
+    }
+}

@@ -1,0 +1,70 @@
+@include phone{
+
+.program-selection__wrapper-text{
+    @include container-styles;
+}
+
+.program-selection__title{
+    padding-top: 27px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 37px;
+}
+
+.program-selection__subtitle{
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-bottom: 39px;
+}
+
+}
+
+/* Table */
+
+@include table {
+
+    .program-selection__wrapper{
+        width: 628px;
+        margin: 0 auto;
+    }
+    
+    .program-selection__title{
+        padding-top: 65px;
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 51px;
+    }
+    
+    .program-selection__subtitle{
+        font-size: 20px;
+        line-height: 30px;
+        text-transform: uppercase;
+        margin-bottom: 66px;
+    }
+    
+}
+
+/* Desktop */
+
+@include desktop{
+    .program-selection__wrapper{
+        @include container-styles-desktop;
+    }
+    
+    .program-selection__title{
+        padding-top: 17px;
+        margin-left: 6px;
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 54px;
+    }
+    
+    .program-selection__subtitle{
+        font-size: 20px;
+        line-height: 30px;
+        text-transform: uppercase;
+        margin-bottom: 66px;
+        margin-left: 9px;
+    }
+}

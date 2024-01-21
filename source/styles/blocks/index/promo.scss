@@ -1,0 +1,188 @@
+@include phone {
+    .promo {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            height: 302px;
+            left: 0;
+            background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../images/promo/index-background-desktop.png" 1x, "../images/promo/index-background-desktop@2x.png" 2x);
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 20px;
+            z-index: -1;
+        }
+    }
+
+    .promo__wrapper {
+        @include container-styles;
+    }
+
+    .promo__title {
+        padding-top: 26px;
+        margin-bottom: 24px;
+        font-size: 36px;
+        line-height: 36px;
+        font-weight: 400;
+        color: $basic-white;
+    }
+
+    .promo__description {
+        margin-bottom: 29px;
+        font-size: 14px;
+        line-height: 14px;
+        color: $basic-white;
+        text-transform: uppercase;
+    }
+
+    .promo__img{
+        margin-bottom: 2px;
+    }
+
+    .promo__button {
+        width: 100%;
+        height: 40px;
+        text-transform: uppercase;
+        background-color: $basic-green;
+        color: $basic-white;
+        border: none;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: -0.5px;
+    }
+
+}
+
+/* Table */
+
+@include table {
+    .promo__wrapper {
+        @include container-styles-tablet;
+        position: relative;
+    }
+
+    .promo__title {
+        width: 416px;
+        margin-left: 90px;
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 40px;
+        margin-top: 62px;
+
+    }
+
+    .promo__description {
+        width: 400px;
+        margin-left: 90px;
+        margin-bottom: 21px;
+        font-size: 20px;
+        line-height: 20px;
+        color: $basic-dark;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .promo__button {
+        width: 244px;
+        height: 54px;
+        position: absolute;
+        background-color: #68b738;
+        color: #fff;
+        border: 0;
+        top: 230px;
+        left: 89px;
+        font-family: Oswald;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+
+}
+
+/* Desktop */
+
+@include desktop {
+    .promo {
+        margin-bottom: 266px;
+    }
+
+    .promo__wrapper {
+        @include container-styles-desktop;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            height: 694px;
+            left: 50.6%;
+            top: 0;
+            background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../images/promo/cat-desktop.png" 1x, "../images/promo/cat-desktop@2x.png" 2x);
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+    }
+
+    .promo__title {
+        width: 420px;
+        text-align: left;
+        margin-left: 88px;
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 40px;
+        margin-top: 52px;
+        position: relative;
+    }
+
+    .promo__description {
+        width: 400px;
+        margin-left: 89px;
+        margin-bottom: 53px;
+        font-size: 20px;
+        line-height: 20px;
+        color: $basic-dark;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .promo__position-img {
+        position: relative;
+    }
+
+    .promo__img {
+        position: absolute;
+        left: 37.3%;
+        top: -28%;
+    }
+
+    .promo__button-link{
+        margin-left: 89px;
+    }
+
+    .promo__button {
+        width: 244px;
+        height: 54px;
+        background-color: #68b738;
+        color: #fff;
+        border: 0;
+        font-family: $primary-font;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;     
+        text-transform: uppercase;
+    }
+
+}
