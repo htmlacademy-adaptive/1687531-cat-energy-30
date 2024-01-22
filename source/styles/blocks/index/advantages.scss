@@ -144,7 +144,7 @@
 
     &--three,
     &--four{
-      padding-top: 193px;
+      padding-top: 195px;
     }
   
     &--one::after,
@@ -205,34 +205,34 @@
         display: block;
         position: absolute;
         background-repeat: no-repeat;
-        background-position: 26px 9vh;
+        background-position: 50% 50%;
 
         @if $description ==one {
           background-image: url('../../images/advantages/sheet.svg');
           background-size: 25px 32px;
           left: 1px;
-          bottom: 41%;
+          bottom: 40%;
         }
 
         @else if $description ==two {
           background-image: url('../../images/advantages/powder.svg');
-          background-size: 27px 29px;
+          background-size: 27px 32px;
           left: 1px;
-          bottom: 41%;
+          bottom: 40%;
         }
 
         @else if $description ==three {
           background-image: url('../../images/advantages/eat.svg');
-          background-size: 28px 27px;
+          background-size: 25px 31px;
           left: 1px;
-          bottom: 39%;
+          bottom: 38%;
         }
 
         @else if $description ==four {
           background-image: url('../../images/advantages/time.svg');
-          background-size: 30px 30px;
+          background-size: 28px 31px;
           left: 1px;
-          bottom: 39%;
+          bottom: 38%;
         }
       }
 
@@ -356,7 +356,7 @@
         display: block;
         position: absolute;
         background-repeat: no-repeat;
-        background-position: 28px 7vh;
+        background-position: 50% 50%;
         bottom: 40%;
         background-size: 25px 33px;
 

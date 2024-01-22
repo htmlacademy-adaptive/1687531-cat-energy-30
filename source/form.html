@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png"> <!--180x180-->
@@ -37,7 +37,7 @@
 
   <header class="header">
     <div class="header__wrapper">
-      <div class="header_wrapper-pic">
+      <div class="header__wrapper-pic">
         <picture>
           <source media="(min-width: 1440px)" type="image/svg+xml" width="70" height="59"
             srcset="./images/header/logo-desktop.svg">
@@ -46,7 +46,8 @@
           <img class="header__logo" src="./images/header/logo-mobile.svg" width="33" height="38"
             alt="Логотип Cat-Energy">
         </picture>
-        <a class="header__cat-energy-link" href="index.html"><img class="header__cat-energy" src="./images/header/cat-energy.svg" width="101" height="18" alt="Cat-Energy"></a>
+        <a class="header__cat-energy-link" href="index.html"><img class="header__cat-energy"
+            src="./images/header/cat-energy.svg" width="101" height="18" alt="Cat-Energy"></a>
       </div>
       <nav class="nav nav--closed">
         <button class="nav__toggle" type="button">
@@ -66,89 +67,90 @@
       <h1 class="visually-hidden">Анкета питания.</h1>
       <div class="program-selection__wrapper">
         <div class="program-selection__wrapper-text">
-        <h2 class="program-selection__title">Подбор программы</h2>
-        <h3 class="program-selection__subtitle">
-          Заполните анкету, и мы подберем<br>программу питания для вашего
-          кота</h3>
-       </div>
+          <h2 class="program-selection__title">Подбор программы</h2>
+          <h3 class="program-selection__subtitle">
+            Заполните анкету, и мы подберем<br>программу питания для вашего
+            кота</h3>
+        </div>
         <form class="program-selection__questionnaire questionnaire" action="https://echo.htmlacademy.ru/"
           method="post">
           <div class="questionnaire__wrapper-index">
-          <ul class="questionnaire__cat-data cat-data reset-list">
-            <li class="cat-data__item">
-              <label class="cat-data__name cat-data__name--nickname" for="name-cat">ИМЯ:*</label>
-              <input class="cat-data__name-form cat-data__name-form--nickname" type="text" name="name-cat"
-                value="Барсик" id="name-cat" required />
-            </li>
-            <li class="cat-data__item">
-              <label class="cat-data__name cat-data__name--wt" for="wt-cat">Вес (кг):*</label>
-              <input class="cat-data__name-form cat-data__name-form--wt" type="text" name="wt-cat" value="7" id="wt-cat"
-                required >
-            </li>
-            <li class="cat-data__item">
-              <label class="cat-data__name cat-data__name--age" for="age-cat">Возраст (лет):</label>
-              <input class="cat-data__name-form cat-data__name-form--age" type="text" name="age-cat" value="7"
-                id="age-cat" >
-            </li>
-          </ul>
-          <hr class="stripe">
-          <div class="questionnaire__purpose-program purpose-program">
-            <fieldset class="purpose-program__form">
-              <legend class="visually-hidden">Цель программы питания.</legend>
-              <ul class="purpose-program__list reset-list">
-                <li class="purpose-program__item">
-                  <label class="purpose-program__label">
-                    <input class="purpose-program__input" type="radio" name="purpose-program" value="program-slim"
-                      checked="checked" />
+            <ul class="questionnaire__cat-data cat-data reset-list">
+              <li class="cat-data__item">
+                <label class="cat-data__name cat-data__name--nickname" for="name-cat">ИМЯ:*</label>
+                <input class="cat-data__name-form cat-data__name-form--nickname" type="text" name="name-cat"
+                  value="Барсик" id="name-cat" required>
+              </li>
+              <li class="cat-data__item">
+                <label class="cat-data__name cat-data__name--wt" for="wt-cat">Вес (кг):*</label>
+                <input class="cat-data__name-form cat-data__name-form--wt" type="text" name="wt-cat" value="7"
+                  id="wt-cat" required>
+              </li>
+              <li class="cat-data__item">
+                <label class="cat-data__name cat-data__name--age" for="age-cat">Возраст (лет):</label>
+                <input class="cat-data__name-form cat-data__name-form--age" type="text" name="age-cat" value="7"
+                  id="age-cat">
+              </li>
+            </ul>
+            <hr class="stripe">
+            <div class="questionnaire__purpose-program purpose-program">
+              <fieldset class="purpose-program__form">
+                <legend class="visually-hidden">Цель программы питания.</legend>
+                <ul class="purpose-program__list reset-list">
+                  <li class="purpose-program__item">
+                    <label class="purpose-program__label">
+                      <input class="purpose-program__input" type="radio" name="purpose-program" value="program-slim"
+                        checked="checked">
                       <span class="purpose-program__mark"></span>
-                    <span class="purpose-program__name">похудение</span></label>
-                </li>
-                <li class="purpose-program__item">
-                  <label class="purpose-program__label">
-                    <input class="purpose-program__input" type="radio" name="purpose-program" value="program-pro" >
-                    <span class="purpose-program__mark"></span>
-                    <span class="purpose-program__name">набор массы</span></label>
-                </li>
-                <li class="purpose-program__item">
-                  <label class="purpose-program__label"><input class="purpose-program__input" type="radio"
-                      name="purpose-program" value="need-your-advice" />
-                    <span class="purpose-program__mark"></span>
-                    <span class="purpose-program__name">не знаю (нужен ваш совет)</span></label>
-                </li>
-              </ul>
-            </fieldset>
+                      <span class="purpose-program__name">похудение</span></label>
+                  </li>
+                  <li class="purpose-program__item">
+                    <label class="purpose-program__label">
+                      <input class="purpose-program__input" type="radio" name="purpose-program" value="program-pro">
+                      <span class="purpose-program__mark"></span>
+                      <span class="purpose-program__name">набор массы</span></label>
+                  </li>
+                  <li class="purpose-program__item">
+                    <label class="purpose-program__label"><input class="purpose-program__input" type="radio"
+                        name="purpose-program" value="need-your-advice">
+                      <span class="purpose-program__mark"></span>
+                      <span class="purpose-program__name">не знаю (нужен ваш совет)</span></label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
           </div>
-        </div>
           <hr class="stripe">
           <div class="questionnaire__contact contact">
             <div class="contact__wrapper line">
               <h3 class="contact__title">
-                Контактные данные <br class="none" />(владельца кота)
+                Контактные данные <br class="none">(владельца кота)
               </h3>
             </div>
             <div class="contact__list-wrapper">
-            <ul class="contact__list reset-list">
-              <li class="contact__item">
-                <label class="contact__label contact__label--email" for="email">E-mail:*</label>
-                <input class="contact__input contact__input--email" type="email" value="kuklachev@gmail.com"
-                  name="email" id="email" required >
-              </li>
-              <li class="contact__item">
-                <label class="contact__label contact__label--phone" for="phone">Телефон:*</label>
-                <input class="contact__input contact__input--phone" type="tel" value="8 (960) 900-60-90" name="phone"
-                  id="phone" required >
-              </li>
-            </ul>
-          </div>
+              <ul class="contact__list reset-list">
+                <li class="contact__item">
+                  <label class="contact__label contact__label--email" for="email">E-mail:*</label>
+                  <input class="contact__input contact__input--email" type="email" value="kuklachev@gmail.com"
+                    name="email" id="email" required>
+                </li>
+                <li class="contact__item">
+                  <label class="contact__label contact__label--phone" for="phone">Телефон:*</label>
+                  <input class="contact__input contact__input--phone" type="tel" value="8 (960) 900-60-90" name="phone"
+                    id="phone" required>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="questionnaire__comment comment">
             <div class="comment__wrapper line">
               <h3 class="comment__title">Комментарий</h3>
             </div>
             <div class="comment__skill-wrapper">
-            <label class="comment__skill-cat" for="skills"></label>
-            <textarea class="comment__skill-cat-form" rows="5" cols="30" id="skills" >Расскажите обо всех повадках кота</textarea>
-          </div>
+              <label class="comment__skill-cat" for="skills"></label>
+              <textarea class="comment__skill-cat-form" rows="5" cols="30"
+                id="skills">Расскажите обо всех повадках кота</textarea>
+            </div>
           </div>
           <div class="questionnaire__additionally additionally">
             <div class="additionally__wrapper line">
@@ -157,25 +159,25 @@
             <ul class="additionally__list reset-list">
               <li class="additionally__item">
                 <label class="additionally__label"><input class="additionally__form" type="checkbox" name="additionally"
-                    value="fake-sugar" checked="checked" >
+                    value="fake-sugar" checked="checked">
                   <span class="additionally__mark"></span>
                   <span class="additionally__description">Сахарозаменитель</span></label>
               </li>
               <li class="additionally__item">
                 <label class="additionally__label"><input class="additionally__form" type="checkbox" name="additionally"
-                    value="water" >
+                    value="water">
                   <span class="additionally__mark"></span>
                   <span class="additionally__description">Питьевая вода</span></label>
               </li>
               <li class="additionally__item">
                 <label class="additionally__label"><input class="additionally__form" type="checkbox" name="additionally"
-                    value="milk" >
+                    value="milk">
                   <span class="additionally__mark"></span>
                   <span class="additionally__description">Молоко</span></label>
               </li>
               <li class="additionally__item">
                 <label class="additionally__label"><input class="additionally__form" type="checkbox" name="additionally"
-                    value="vitamins" >
+                    value="vitamins">
                   <span class="additionally__mark"></span>
                   <span class="additionally__description">Витамины</span></label>
               </li>
@@ -190,36 +192,36 @@
         </form>
       </div>
     </section>
-  </main>
-  <div class="page-main__wrapper-contacts">
-  <section class="contacts">
-    <div class="contacts__wrapper">
-      <span class="contacts__description">
-        приглашаем<br>
-        к сотрудничеству
-        дилеров!
-      </span>
-      <span class="contacts__address">
-        ул. Большая
-        Конюшенная, д. 19/8<p class="contacts__space">&nbsp;</p>
-        Санкт-Петербург
-      </span>
+    <div class="main-container-form__wrapper-contacts">
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <span class="contacts__description">
+            приглашаем<br>
+            к сотрудничеству
+            дилеров!
+          </span>
+          <div class="contacts__address">
+            ул. Большая<br>
+            Конюшенная, д. 19/8<br>
+            <div class="contacts__space">&nbsp;</div>
+            Санкт-Петербург
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <h3 class="visually-hidden">Наше местоположение.</h3>
+        <iframe class="map__google-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+          width="320" height="362" allowfullscreen
+          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+        </iframe>
+      </section>
     </div>
-  </section>
   </main>
-  <section class="map">
-    <h3 class="visually-hidden">Наше местоположение.</h3>
-    <iframe class="map__google-map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-      width="320" height="362" allowfullscreen
-      title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
-    </iframe>
-  </section>
-</div>
   <footer class="footer">
     <div class="footer__wrapper">
       <div class="footer__social social">
-        <img class="social__img" src="./images/header/cat-energy.svg" alt="Логотип Cat-Energy" />
+        <img class="social__img" src="./images/header/cat-energy.svg" alt="Логотип Cat-Energy">
         <ul class="social__list">
           <li class="social__items">
             <a class="social__link" href="#"><span class="visually-hidden">Вконтакте</span><svg
@@ -246,13 +248,15 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="copyright__description">HTML Academy</p>
           </a>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Логотип HTML
-                Academy</span><svg class="copyright__icon copyright__icon--html social__icon" width="27" height="34"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#htmlacademy"></use>
-              </svg></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span
+              class="visually-hidden">Логотип HTML
+              Academy</span><svg class="copyright__icon copyright__icon--html social__icon" width="27" height="34"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#htmlacademy"></use>
+            </svg></a>
         </div>
       </div>
+    </div>
   </footer>
   <script src="./scripts/index.js"></script>
 </body>
